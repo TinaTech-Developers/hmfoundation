@@ -37,16 +37,29 @@ const projects: Project[] = [
 export default function FeaturedShowcaseSection() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.h2
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Section Heading */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12"
+          transition={{ duration: 0.8 }}
+          className="mb-16"
         >
-          Our Projects / Featured Initiatives
-        </motion.h2>
+          <span className="text-green-700 font-semibold tracking-wide uppercase text-sm">
+            Featured Initiatives
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">
+            Our Projects Making a Difference
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Each initiative represents our commitment to sustainable impact —
+            bringing education, empowerment, and hope to communities across
+            Zimbabwe.
+          </p>
+          <div className="mx-auto mt-4 w-20 h-1 bg-green-600 rounded-full"></div>
+        </motion.div>
 
+        {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <motion.div
@@ -54,7 +67,7 @@ export default function FeaturedShowcaseSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
+              className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -64,12 +77,14 @@ export default function FeaturedShowcaseSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 text-left pb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-700 text-sm">{project.description}</p>
               </div>
+              {/* Centered Green Line (80% width) */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-1 bg-green-600 rounded-full"></div>
             </motion.div>
           ))}
         </div>
