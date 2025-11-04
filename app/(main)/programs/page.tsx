@@ -81,7 +81,7 @@ export default function ProgramsPage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all"
+              className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:shadow-lime-600 hover:-translate-y-1 transition-all"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -91,7 +91,10 @@ export default function ProgramsPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6 text-center">
+
+              <div className="p-6 text-center pb-10">
+                {" "}
+                {/* Added bottom padding so text doesn't overlap the line */}
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {program.title}
                 </h3>
@@ -104,8 +107,10 @@ export default function ProgramsPage() {
                 >
                   Learn More →
                 </a>
-                <div className="h-2 w-4/5 mx-auto bg-lime-600 rounded-full mt-4"></div>
               </div>
+
+              {/* LIME LINE fixed at bottom */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600"></div>
             </motion.div>
           ))}
         </div>

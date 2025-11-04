@@ -85,8 +85,9 @@ export default function NewsPage() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
+                  className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl hover:shadow-lime-600 transition overflow-hidden"
                 >
+                  {/* Article Image */}
                   <div className="relative h-56 w-full">
                     <Image
                       src={article.image}
@@ -95,7 +96,9 @@ export default function NewsPage() {
                       className="object-cover rounded-t-2xl"
                     />
                   </div>
-                  <div className="p-6">
+
+                  {/* Text Content */}
+                  <div className="p-6 pb-10">
                     <p className="text-sm text-green-700 font-semibold mb-2">
                       {article.category}
                     </p>
@@ -112,11 +115,13 @@ export default function NewsPage() {
                       Read More →
                     </Link>
                   </div>
+
+                  {/* Lime accent line */}
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600 "></div>
                 </motion.div>
               ))}
             </div>
           </div>
-
           {/* RIGHT SIDEBAR */}
           <aside className="space-y-8">
             {/* Categories */}
