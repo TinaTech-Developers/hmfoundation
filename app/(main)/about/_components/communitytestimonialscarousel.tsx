@@ -54,7 +54,7 @@ export default function CommunityTestimonialsCarousel() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm  font-semibold text-lime-600 uppercase mb-2 inline-block"
         >
           Voices of Change
         </motion.span>

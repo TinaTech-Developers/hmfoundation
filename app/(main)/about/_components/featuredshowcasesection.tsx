@@ -45,7 +45,7 @@ export default function FeaturedShowcaseSection() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <span className="text-green-700 font-semibold tracking-wide uppercase text-sm">
+          <span className="text-lime-600 font-semibold tracking-wide uppercase text-sm">
             Featured Initiatives
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">
@@ -56,7 +56,7 @@ export default function FeaturedShowcaseSection() {
             bringing education, empowerment, and hope to communities across
             Zimbabwe.
           </p>
-          <div className="mx-auto mt-4 w-20 h-1 bg-green-600 rounded-full"></div>
+          <div className="mx-auto mt-4 w-20 h-1 bg-lime-600 rounded-full"></div>
         </motion.div>
 
         {/* Project Cards */}
@@ -67,7 +67,7 @@ export default function FeaturedShowcaseSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+              className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl shadow-lime-600 transition-all duration-300"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -84,7 +84,7 @@ export default function FeaturedShowcaseSection() {
                 <p className="text-gray-700 text-sm">{project.description}</p>
               </div>
               {/* Centered Green Line (80% width) */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-1 bg-green-600 rounded-full"></div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-2 bg-lime-600 "></div>
             </motion.div>
           ))}
         </div>
