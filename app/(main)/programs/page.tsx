@@ -40,11 +40,11 @@ export default function ProgramsPage() {
     <PageLayout
       title="Our Programs - Hiraya Manawari Foundation"
       description="Explore the transformative programs driving our mission — education, clean water, women empowerment, and sustainable community development."
-      image="/images/programs/hero.jpg"
+      image="https://reintegrationfacility.eu/wp-content/uploads/2024/09/NGO-training-950x482.jpg"
       ctaPrimary={{ label: "Get Involved", href: "/get-involved" }}
       ctaSecondary={{ label: "Donate Now", href: "/donate" }}
     >
-      <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

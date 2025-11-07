@@ -124,7 +124,7 @@ export default function GetInvolvedPage() {
               >
                 <div className="relative w-full h-80 rounded-3xl shadow-lg transition-transform transform-style-preserve-3d group-hover:rotate-y-180 cursor-pointer">
                   {/* Front Side */}
-                  <div className="absolute w-full h-full backface-hidden bg-gradient-to-tr from-lime-500 to-lime-300 rounded-3xl flex flex-col items-center justify-center p-6 text-white">
+                  <div className="absolute w-full h-full backface-hidden bg-linear-to-tr from-lime-500 to-lime-300 rounded-3xl flex flex-col items-center justify-center p-6 text-white">
                     <div className="w-16 h-16 mb-4">
                       <Image
                         src={option.image}
@@ -279,29 +279,30 @@ const getInvolvedOptions = [
     title: "Volunteer",
     description:
       "Give your time and skills to support our community initiatives and programs.",
-    image: "/images/get-involved/volunteer.jpg",
-    link: "/volunteer",
+    image:
+      "https://www.ualberta.ca/en/youalberta/media-library/2024/01/volunteer.jpg",
+    link: "/donate",
   },
   {
     title: "Donate",
     description:
       "Provide financial support to fund our impactful programs and projects.",
-    image: "/images/get-involved/donate.jpg",
+    image: "https://www.goodwillaz.org/wp-content/uploads/2021/11/5-15-1.jpg",
     link: "/donate",
   },
   {
     title: "Partner",
     description:
       "Collaborate with us as an organization, school, or business to expand our reach.",
-    image: "/images/get-involved/partner.jpg",
-    link: "/partner",
+    image: "https://www.gjournals.org/wp-content/uploads/2022/05/Clip77.png",
+    link: "/donate",
   },
   {
     title: "Events",
     description:
       "Join or organize events that raise awareness and funds for community development.",
-    image: "/images/get-involved/events.jpg",
-    link: "/events",
+    image: "/empowering_communities.png",
+    link: "/programs",
   },
 ];
 

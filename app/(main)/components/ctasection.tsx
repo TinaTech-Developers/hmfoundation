@@ -37,17 +37,17 @@ export default function CTASection() {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           <a
-            href="#donate"
+            href="/donate"
             className="px-8 py-3 bg-white text-lime-600 font-semibold rounded-full shadow-lg hover:bg-white/90 transition"
           >
             Donate Now
           </a>
-          <a
+          {/* <a
             href="#volunteer"
             className="px-8 py-3 border border-white text-white font-semibold rounded-full shadow-lg hover:bg-white/10 transition"
           >
             Volunteer
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </section>

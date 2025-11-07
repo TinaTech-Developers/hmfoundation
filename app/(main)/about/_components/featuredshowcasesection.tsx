@@ -16,21 +16,23 @@ const projects: Project[] = [
     id: 1,
     title: "Clean Water Project",
     description: "Providing safe water to communities in need.",
-    imageUrl: "/images/projects/water.jpg",
+    imageUrl:
+      "https://www.wvi.org/sites/default/files/2022-03/D200-0913-105.jpg",
   },
   {
     id: 2,
     title: "Education for All",
     description:
       "Supporting children’s education with resources and scholarships.",
-    imageUrl: "/images/projects/education.jpg",
+    imageUrl: "/education.jpg",
   },
   {
     id: 3,
     title: "Women Empowerment",
     description:
       "Skills and training for women to achieve economic independence.",
-    imageUrl: "/images/projects/women.jpg",
+    imageUrl:
+      "https://thumbs.dreamstime.com/b/diversity-women-s-empowerment-hands-color-working-together-women-different-backgrounds-create-hand-mandalas-diversity-wins-135073837.jpg",
   },
 ];
 

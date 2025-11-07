@@ -26,7 +26,8 @@ const showcases: Showcase[] = [
     title: "Clean Water Projects",
     description:
       "Building sustainable clean water systems to improve health and well-being in rural communities.",
-    imageUrl: "/images/projects/water.jpg",
+    imageUrl:
+      "https://www.wvi.org/sites/default/files/2022-03/D200-0913-105.jpg",
     cta: "Learn More",
   },
   {
@@ -34,7 +35,8 @@ const showcases: Showcase[] = [
     title: "Women Empowerment Programs",
     description:
       "Training and supporting women with skills and resources to achieve financial independence.",
-    imageUrl: "/images/projects/women.jpg",
+    imageUrl:
+      "https://thumbs.dreamstime.com/b/diversity-women-s-empowerment-hands-color-working-together-women-different-backgrounds-create-hand-mandalas-diversity-wins-135073837.jpg",
     cta: "Join Us",
   },
 ];

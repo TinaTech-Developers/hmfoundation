@@ -100,9 +100,9 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl h-64 sm:h-80 md:h-96">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-green-600 h-64 sm:h-80 md:h-96">
               <Image
-                src="/images/about/story.jpg"
+                src="/environment.jpg"
                 alt="Our Story"
                 width={600}
                 height={450}

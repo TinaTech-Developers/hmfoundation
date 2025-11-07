@@ -21,8 +21,8 @@ export default function Home() {
       <ImpactSection />
       <StorySliderSection />
       {/* <FeaturedProjectsSection /> */}
-      <Testimonials />
       <FeaturedShowcaseSection />
+      <Testimonials />
       <CTASection />
       <ProfessionalFooter />
     </>
