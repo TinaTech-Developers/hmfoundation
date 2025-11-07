@@ -8,10 +8,13 @@ import ImpactSection from "./(main)/components/impactsection";
 import ProgramsSection from "./(main)/components/programssection";
 import StorySliderSection from "./(main)/components/storyslidersection";
 import Testimonials from "./(main)/components/testimonials";
+import FloatingNavbar from "./(main)/components/navbar";
+import ProfessionalFooter from "./(main)/components/footer";
 
 export default function Home() {
   return (
     <>
+      <FloatingNavbar />
       <HeroSlider />
       <About />
       <ProgramsSection />
@@ -21,6 +24,7 @@ export default function Home() {
       <Testimonials />
       <FeaturedShowcaseSection />
       <CTASection />
+      <ProfessionalFooter />
     </>
   );
 }

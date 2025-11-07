@@ -3,12 +3,42 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import PageLayout from "../components/pagelayout";
 import PartnerSpotlightSection from "./_components/partnerspotlightsection";
 import CommunityTestimonialsCarousel from "../about/_components/communitytestimonialscarousel";
-import { SlUmbrella } from "react-icons/sl";
+
+interface NewsArticle {
+  _id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  category: string;
+  slug: string;
+  date: string;
+}
 
 export default function NewsPage() {
+  const [articles, setArticles] = useState<NewsArticle[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const res = await fetch("/api/admin/news");
+        if (!res.ok) throw new Error("Failed to fetch news articles");
+        const data = await res.json();
+        setArticles(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchArticles();
+  }, []);
+
   return (
     <PageLayout
       title="News & Updates - Hiraya Manawari Foundation"
@@ -40,88 +70,93 @@ export default function NewsPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2 space-y-10">
-            {/* Featured Article */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="overflow-hidden rounded-3xl shadow-lg bg-white"
-            >
-              <div className="relative h-80 w-full">
-                <Image
-                  src="/images/news/featured.jpg"
-                  alt="Featured article"
-                  fill
-                  className="object-cover rounded-t-3xl"
-                />
-              </div>
-              <div className="p-8">
-                <span className="text-green-700 text-sm font-semibold">
-                  COMMUNITY IMPACT
-                </span>
-                <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
-                  How Rural Communities Are Transforming Through Education
-                </h2>
-                <p className="text-gray-700 mb-6">
-                  Through our education empowerment programs, children and youth
-                  in rural areas are gaining access to better learning
-                  opportunities. This initiative has already reached over 1,200
-                  learners across Zimbabwe.
-                </p>
-                <Link
-                  href="#"
-                  className="text-lime-700 font-medium hover:underline"
-                >
-                  Read More →
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Articles Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {newsArticles.map((article, i) => (
+            {loading ? (
+              <p className="text-gray-500">Loading articles...</p>
+            ) : articles.length === 0 ? (
+              <p className="text-gray-500">No news articles available.</p>
+            ) : (
+              <>
+                {/* Featured Article */}
                 <motion.div
-                  key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl hover:shadow-lime-600 transition overflow-hidden"
+                  transition={{ duration: 0.6 }}
+                  className="overflow-hidden rounded-3xl shadow-lg bg-white"
                 >
-                  {/* Article Image */}
-                  <div className="relative h-56 w-full">
-                    <Image
-                      src={article.image}
-                      alt={article.title}
-                      fill
-                      className="object-cover rounded-t-2xl"
-                    />
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="p-6 pb-10">
-                    <p className="text-sm text-green-700 font-semibold mb-2">
-                      {article.category}
-                    </p>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      {article.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-4">
-                      {article.excerpt}
-                    </p>
-                    <Link
-                      href={`/news/${article.slug}`}
-                      className="text-lime-700 font-medium hover:underline"
-                    >
-                      Read More →
-                    </Link>
-                  </div>
-
-                  {/* Lime accent line */}
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600 "></div>
+                  {articles[0] && (
+                    <>
+                      <div className="relative h-80 w-full">
+                        <Image
+                          src={articles[0].image}
+                          alt={articles[0].title}
+                          fill
+                          className="object-cover rounded-t-3xl"
+                        />
+                      </div>
+                      <div className="p-8">
+                        <span className="text-green-700 text-sm font-semibold">
+                          {articles[0].category.toUpperCase()}
+                        </span>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
+                          {articles[0].title}
+                        </h2>
+                        <p className="text-gray-700 mb-6">
+                          {articles[0].excerpt}
+                        </p>
+                        <Link
+                          href={`/news/$${articles[0]._id}`}
+                          className="text-lime-700 font-medium hover:underline"
+                        >
+                          Read More →
+                        </Link>
+                      </div>
+                    </>
+                  )}
                 </motion.div>
-              ))}
-            </div>
+
+                {/* Articles Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  {articles.slice(1).map((article, i) => (
+                    <motion.div
+                      key={article._id}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: i * 0.1 }}
+                      className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl hover:shadow-lime-600 transition overflow-hidden"
+                    >
+                      <div className="relative h-56 w-full">
+                        <Image
+                          src={article.image}
+                          alt={article.title}
+                          fill
+                          className="object-cover rounded-t-2xl"
+                        />
+                      </div>
+                      <div className="p-6 pb-10">
+                        <p className="text-sm text-green-700 font-semibold mb-2">
+                          {article.category}
+                        </p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2">
+                          {article.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm mb-4">
+                          {article.excerpt}
+                        </p>
+                        <Link
+                          href={`/news/${article._id}`}
+                          className="text-lime-700 font-medium hover:underline"
+                        >
+                          Read More →
+                        </Link>
+                      </div>
+                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600 "></div>
+                    </motion.div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
+
           {/* RIGHT SIDEBAR */}
           <aside className="space-y-8">
             {/* Categories */}
@@ -169,44 +204,9 @@ export default function NewsPage() {
           </aside>
         </div>
       </section>
+
       <PartnerSpotlightSection />
       <CommunityTestimonialsCarousel />
     </PageLayout>
   );
 }
-
-/* ---------- DATA ---------- */
-const newsArticles = [
-  {
-    slug: "empowering-women-sustainable-farming",
-    title: "Empowering Women Through Sustainable Farming",
-    excerpt:
-      "Women-led farming initiatives are driving food security and community growth in rural districts.",
-    image: "/images/news/women-farming.jpg",
-    category: "Sustainability",
-  },
-  {
-    slug: "youth-innovation-building-a-greener-future",
-    title: "Youth Innovation: Building a Greener Future",
-    excerpt:
-      "Our youth programs are empowering young innovators to create eco-friendly business solutions.",
-    image: "/images/news/green-innovation.jpg",
-    category: "Environment",
-  },
-  {
-    slug: "healthcare-outreach-remote-areas",
-    title: "Healthcare Outreach in Remote Areas",
-    excerpt:
-      "Mobile clinics are bringing healthcare access to families in previously underserved communities.",
-    image: "/images/news/healthcare.jpg",
-    category: "Health",
-  },
-  {
-    slug: "community-driven-education-success-stories",
-    title: "Tech for Good: Digital Literacy for All",
-    excerpt:
-      "We’re bridging the digital divide by equipping communities with essential tech skills for the future.",
-    image: "/images/news/digital-literacy.jpg",
-    category: "Education",
-  },
-];

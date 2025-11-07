@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-
+import FloatingNavbar from "./navbar";
+import ProfessionalFooter from "./footer";
 interface CTA {
   label: string;
   href: string;
@@ -31,8 +32,9 @@ export default function PageLayout({
 }: PageLayoutProps) {
   return (
     <main className="w-full bg-white">
+      <FloatingNavbar />
       {/* Hero Section */}
-      <section className="relative h-[60vh] sm:h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] sm:h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
           src={image}
           alt={title}
@@ -47,7 +49,7 @@ export default function PageLayout({
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 text-white"
+          className="relative z-10 max-w-3xl mx-auto text-center px-4 md:mt-16 sm:px-6 lg:px-8 text-white"
         >
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
@@ -102,6 +104,7 @@ export default function PageLayout({
       </section>
 
       {children && <div className="relative z-10">{children}</div>}
+      <ProfessionalFooter />
     </main>
   );
 }
