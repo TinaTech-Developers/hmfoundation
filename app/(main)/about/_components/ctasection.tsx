@@ -17,7 +17,7 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl font-bold text-white mb-6"
         >
-          Join Us in Making a Difference
+          Partner with Us in Making a Difference
         </motion.h2>
 
         <motion.p

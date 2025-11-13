@@ -41,9 +41,9 @@ export default function NewsPage() {
 
   return (
     <PageLayout
-      title="News & Updates - Hiraya Manawari Foundation"
+      title="News & Updates "
       description="Stay informed with stories, community updates, and highlights from our projects and partners."
-      image="/images/news/hero.jpg"
+      image="https://mediadna.com.ng/wp-content/uploads/2019/05/Newspaper.png"
       ctaPrimary={{ label: "Join Our Newsletter", href: "/subscribe" }}
     >
       {/* Hero Section */}

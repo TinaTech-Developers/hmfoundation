@@ -25,6 +25,7 @@ export default function FloatingNavbar() {
     { name: "Programs", href: "/programs" },
     { name: "Get Involved", href: "/get-involved" },
     { name: "News", href: "/news" },
+    { name: "Volunteer", href: "/volunteer" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -48,7 +49,7 @@ export default function FloatingNavbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] md:w-4/5 z-40 backdrop-blur-xl bg-white border border-white/20 rounded-2xl shadow-xl transition-all  duration-500 ${
+        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] md:w-4/5 z-40 backdrop-blur-xl bg-white border border-white/20 rounded-2xl shadow-xl transition-all duration-500 ${
           scrolled ? "shadow-2xl" : "shadow-lg"
         }`}
       >
@@ -65,14 +66,11 @@ export default function FloatingNavbar() {
               height={50}
               className="h-20 w-20 object-contain"
             />
-            {/* <span className="font-bold text-gray-900 text-lg md:text-xl">
-              Hiraya
-            </span> */}
           </motion.div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link, i) => {
+            {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <motion.div
@@ -93,16 +91,16 @@ export default function FloatingNavbar() {
               );
             })}
 
-            {/* Donate Button */}
+            {/* ✅ Donate Button */}
             <motion.div whileHover={{ scale: 1.1 }} className="relative">
               <Link
                 href="/donate"
-                className="px-5 py-2 rounded-full bg-linear-to-r from-green-600 to-lime-500 text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="relative z-10 px-5 py-2 rounded-full bg-gradient-to-r from-green-600 to-lime-500 text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 Donate
               </Link>
               <motion.span
-                className="absolute -inset-1 rounded-full bg-green-400 opacity-30 blur-xl"
+                className="absolute -inset-1 rounded-full bg-green-400 opacity-30 blur-xl -z-10"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{
                   repeat: Infinity,
@@ -122,7 +120,7 @@ export default function FloatingNavbar() {
           </button>
         </div>
 
-        {/* Mobile Nav (from clean compact design) */}
+        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -149,6 +147,7 @@ export default function FloatingNavbar() {
                     </Link>
                   );
                 })}
+
                 {/* LinkedIn Mobile */}
                 <a
                   href="https://linkedin.com"
@@ -158,11 +157,12 @@ export default function FloatingNavbar() {
                 >
                   <FaLinkedin size={24} />
                 </a>
-                {/* Donate Button */}
+
+                {/* ✅ Mobile Donate Button */}
                 <Link
                   href="/donate"
                   onClick={() => setIsOpen(false)}
-                  className="mt-4 w-full text-center px-6 py-3 bg-lime-500 text-white rounded-full font-bold shadow-lg hover:shadow-2xl transition-all duration-300"
+                  className="mt-4 w-full text-center px-6 py-3 bg-gradient-to-r from-green-600 to-lime-500 text-white rounded-full font-bold shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                   Donate
                 </Link>

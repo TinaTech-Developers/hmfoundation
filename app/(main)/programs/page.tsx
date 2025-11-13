@@ -38,8 +38,8 @@ export default function ProgramsPage() {
 
   return (
     <PageLayout
-      title="Our Programs - Hiraya Manawari Foundation"
-      description="Explore the transformative programs driving our mission — education, clean water, women empowerment, and sustainable community development."
+      title="Our Programs "
+      description="Explore the transformative programs driving our mission — supporting children’s education, caring for the elderly, and fostering strong, empowered communities."
       image="https://reintegrationfacility.eu/wp-content/uploads/2024/09/NGO-training-950x482.jpg"
       ctaPrimary={{ label: "Get Involved", href: "/get-involved" }}
       ctaSecondary={{ label: "Donate Now", href: "/donate" }}

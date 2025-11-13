@@ -25,12 +25,13 @@ export default function ProfessionalFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-lime-600 mb-4">
               Hiraya Manawari Foundation
             </h3>
             <p className="text-gray-400 text-sm">
-              Empowering communities, educating children, providing clean water,
-              and supporting women to build a brighter future.
+              Hiraya Manawari Foundation nurtures hope across generations —
+              empowering children to reach their full potential and providing
+              compassionate care that supports the well-being of the elderly.
             </p>
           </div>
 
@@ -99,12 +100,12 @@ export default function ProfessionalFooter() {
             <form className="flex flex-col sm:flex-row gap-3 mb-4">
               <input
                 type="email"
-                placeholder="Your email"
-                className="w-full px-4 py-2 rounded-full text-gray-900 focus:outline-none"
+                placeholder="Enter your email"
+                className="w-full px-4 py-2 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-lime-500"
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-lime-600 text-white rounded-full font-semibold hover:bg-lime-700 transition"
+                className="px-6 py-2 bg-lime-600 text-white rounded-full font-semibold hover:bg-lime-700 transition shadow-md"
               >
                 Subscribe
               </button>
@@ -139,7 +140,7 @@ export default function ProfessionalFooter() {
         </div>
 
         {/* Partner Logos */}
-        <div className="mt-12 flex flex-wrap justify-center items-center gap-6">
+        {/* <div className="mt-12 flex flex-wrap justify-center items-center gap-6">
           {partners.map((partner) => (
             <img
               key={partner.id}
@@ -148,12 +149,21 @@ export default function ProfessionalFooter() {
               className="h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all"
             />
           ))}
-        </div>
+        </div> */}
 
         {/* Divider & Copyright */}
         <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} Hiraya Manawari Foundation. All
-          rights reserved.
+          rights reserved. <br />
+          Developed by{" "}
+          <a
+            href="https://tinasoftnexus.co.zw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lime-500 hover:underline"
+          >
+            TinasoftNexus
+          </a>
         </div>
       </div>
     </footer>

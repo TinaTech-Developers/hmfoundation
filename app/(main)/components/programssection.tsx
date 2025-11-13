@@ -8,19 +8,19 @@ const items = [
   {
     title: "Education",
     blurb:
-      "Providing access to quality education, teacher support, and learning resources for children and youth.",
+      "Ensure every child has the best possible start in life by providing support and empowerment to reach their full potential.",
     icon: <BookOpen className="w-7 h-7 text-green-600" />,
   },
   {
-    title: "Empowerment",
+    title: "Community Care",
     blurb:
-      "Supporting women and communities through training, entrepreneurship, and sustainable livelihood programs.",
+      "Uplifting communities through volunteer programs, skills development, and compassionate support for the elderly and those in need.",
     icon: <Users className="w-7 h-7 text-green-600" />,
   },
   {
     title: "Environment",
     blurb:
-      "Restoring ecosystems through reforestation, clean water projects, and environmental awareness campaigns.",
+      "Promoting environmental responsibility through tree planting, community cleanups, and awareness campaigns for a greener future.",
     icon: <Leaf className="w-7 h-7 text-green-600" />,
   },
 ];

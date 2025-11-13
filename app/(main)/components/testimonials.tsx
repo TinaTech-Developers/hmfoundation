@@ -16,27 +16,30 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Amina Dube",
-    role: "Student",
+    name: "Eriazeri Muguti",
+    role: "Community Volunteer",
     quote:
-      "Thanks to Hiraya Manawari Foundation, I can attend school and pursue my dreams.",
-    photoUrl: "/images/testimonials/aminda.jpg",
+      "It continuously gives us good information about what needs to be done and what is done. Hiraya Manawari Foundation makes a very big difference in many positive ways to the children’s lives and gives them hope for the future. It is so worthwhile supporting these children and their communities through Hiraya Manawari Foundation.",
+    photoUrl:
+      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
   },
   {
     id: 2,
-    name: "Tariro Moyo",
-    role: "Community Leader",
+    name: "Nyasha Muronzi",
+    role: "Community Volunteer",
     quote:
-      "The clean water project changed our village’s health and daily life completely.",
-    photoUrl: "/images/testimonials/tariro.jpg",
+      "It has been great being part of the intiative which is dedicated to serve and save lifes at the same time. Hiraya Manawari is a true testament of giving back to community.",
+    photoUrl:
+      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
   },
   {
     id: 3,
-    name: "Nomsa Chikowore",
-    role: "Mother & Entrepreneur",
+    name: "Sebastian Jerahuni",
+    role: "Local Partner",
     quote:
-      "I gained skills through their women empowerment program and now support my family.",
-    photoUrl: "/images/testimonials/nomsa.jpg",
+      "Talk of selfless commitment in alleviating communities, Hiraya stands on solid ground. I am loving the groundwork happening in solidifying the vision.",
+    photoUrl:
+      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
   },
 ];
 

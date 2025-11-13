@@ -14,23 +14,19 @@ interface Story {
 const stories: Story[] = [
   {
     id: 1,
-    title: "Education for Children",
-    imageUrl: "/education.jpg",
+    title: "Education for Every Child",
+    imageUrl:
+      "https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg",
   },
   {
     id: 2,
-    title: "Clean Water Initiative",
-    imageUrl: "/images/projects/water.jpg",
+    title: "Elderly Care Initiative",
+    imageUrl: "/social-worker-taking-care-old-woman.jpg",
   },
   {
     id: 3,
-    title: "Women Empowerment Programs",
+    title: "Community Empowerment ",
     imageUrl: "/empowering_communities.png",
-  },
-  {
-    id: 4,
-    title: "Tree Planting Campaign",
-    imageUrl: "/environment.jpg",
   },
 ];
 

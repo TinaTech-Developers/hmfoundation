@@ -15,28 +15,28 @@ interface Showcase {
 const showcases: Showcase[] = [
   {
     id: 1,
-    title: "Empowering Children Through Education",
+    title: "Nurturing Children Through Education",
     description:
-      "We provide learning resources, teacher support, and access to schools for children in underserved communities.",
-    imageUrl: "/empowering_communities.png",
+      "Providing learning resources, mentorship, and access to quality education to help children reach their full potential.",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C5612AQFIJpwWxvLeGw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1556633128798?e=2147483647&v=beta&t=NDjSd_qqRgF5GMy2LfCRfDY68JOq8g98BwxaruY9IMk",
     cta: "Learn More",
   },
   {
     id: 2,
-    title: "Clean Water Projects",
+    title: "Caring for the Elderly",
     description:
-      "Building sustainable clean water systems to improve health and well-being in rural communities.",
+      "Offering compassionate care that addresses physical, emotional, and social needs of elderly community members.",
     imageUrl:
-      "https://www.wvi.org/sites/default/files/2022-03/D200-0913-105.jpg",
+      "https://kefihealthcare.com/wp-content/uploads/2022/10/elderly-care-facilities.jpeg",
     cta: "Learn More",
   },
   {
     id: 3,
-    title: "Women Empowerment Programs",
+    title: "Community Engagement & Support",
     description:
-      "Training and supporting women with skills and resources to achieve financial independence.",
-    imageUrl:
-      "https://thumbs.dreamstime.com/b/diversity-women-s-empowerment-hands-color-working-together-women-different-backgrounds-create-hand-mandalas-diversity-wins-135073837.jpg",
+      "Strengthening communities through volunteer programs, skill-building, and environmental cleanups to create a more inclusive and supportive society.",
+    imageUrl: "/hands-holding-each-other-support.jpg",
     cta: "Join Us",
   },
 ];
@@ -63,6 +63,16 @@ export default function FeaturedShowcaseSection() {
           >
             Featured Initiatives
           </motion.h3>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-4 text-gray-700 max-w-2xl mx-auto"
+          >
+            Empowering lives, enriching communities. Our mission is to nurture
+            children, care for the elderly, and strengthen communities with
+            compassion, faith, and the generosity of our supporters.
+          </motion.p>
         </div>
 
         {/* Showcase Cards */}

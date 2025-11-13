@@ -12,10 +12,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { id: 1, icon: BookOpen, number: "1,200+", label: "Children Educated" },
-  { id: 2, icon: Users, number: "300+", label: "Women Empowered" },
-  { id: 3, icon: Droplet, number: "20+", label: "Clean Water Projects" },
-  { id: 4, icon: Leaf, number: "5,000+", label: "Trees Planted" },
+  { id: 1, icon: BookOpen, number: "100+", label: "Children Assisted" },
+  { id: 2, icon: Users, number: "100+", label: "Elderly Assisted" },
+  { id: 3, icon: Droplet, number: "20+", label: "Projects" },
+  // { id: 4, icon: Leaf, number: "5,000+", label: "Trees Planted" },
 ];
 
 export default function ImpactSection() {
@@ -45,7 +45,7 @@ export default function ImpactSection() {
           communities, restoring environments, and shaping brighter futures.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 ">
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (

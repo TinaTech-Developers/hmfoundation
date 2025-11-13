@@ -9,14 +9,14 @@ import PageLayout from "../components/pagelayout";
 export default function GetInvolvedPage() {
   return (
     <PageLayout
-      title="Get Involved - Hiraya Manawari Foundation"
-      description="Join us in creating meaningful change. Explore volunteering, donations, partnerships, and events to support communities across Zimbabwe."
-      image="/images/get-involved/hero.jpg"
+      title="Get Involved "
+      description="Join us in making a difference. Explore volunteering, donations, partnerships, and events to support children, the elderly, and communities across Zimbabwe."
+      image="/close-up-women-holding-each-other.jpg"
       ctaPrimary={{ label: "Volunteer Today", href: "/volunteer" }}
       ctaSecondary={{ label: "Donate Now", href: "/donate" }}
     >
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-light.svg')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <motion.h2
@@ -42,7 +42,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Modern Get Involved Section */}
-      <section className="relative py-28 bg-gradient-to-b from-white via-green-50 to-green-100 overflow-hidden">
+      <section className="relative py-28 bg-linear-to-b from-white via-green-50 to-green-100 overflow-hidden">
         {/* Background Shapes */}
         <div className="absolute top-0 left-1/3 w-[700px] h-[700px] bg-lime-100 rounded-full opacity-30 -z-10"></div>
         <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-green-200 rounded-full opacity-20 -z-10"></div>
@@ -101,82 +101,6 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Ways to Get Involved - Interactive Flip Cards */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12"
-          >
-            Get Involved in Transformative Ways
-          </motion.h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {getInvolvedOptions.map((option, i) => (
-              <motion.div
-                key={option.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="relative group perspective"
-              >
-                <div className="relative w-full h-80 rounded-3xl shadow-lg transition-transform transform-style-preserve-3d group-hover:rotate-y-180 cursor-pointer">
-                  {/* Front Side */}
-                  <div className="absolute w-full h-full backface-hidden bg-linear-to-tr from-lime-500 to-lime-300 rounded-3xl flex flex-col items-center justify-center p-6 text-white">
-                    <div className="w-16 h-16 mb-4">
-                      <Image
-                        src={option.image}
-                        alt={option.title}
-                        width={64}
-                        height={64}
-                        className="object-cover rounded-full border-2 border-white shadow-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold">{option.title}</h3>
-                  </div>
-
-                  {/* Back Side */}
-                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-3xl p-6 flex flex-col items-center justify-center shadow-inner">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      {option.title}
-                    </h3>
-                    <p className="text-gray-700 text-center mb-4">
-                      {option.description}
-                    </p>
-                    <a
-                      href={option.link}
-                      className="text-lime-600 font-medium hover:underline"
-                    >
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <style jsx>{`
-        .perspective {
-          perspective: 1000px;
-        }
-        .group-hover\\:rotate-y-180:hover .group-hover\\:rotate-y-180 {
-          transform: rotateY(180deg);
-        }
-        .backface-hidden {
-          backface-visibility: hidden;
-        }
-        .rotate-y-180 {
-          transform: rotateY(180deg);
-        }
-        .transform-style-preserve-3d {
-          transform-style: preserve-3d;
-        }
-      `}</style>
-
       {/* FAQ Section */}
       <FAQSection />
 
@@ -189,7 +113,7 @@ export default function GetInvolvedPage() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl font-bold mb-6"
           >
-            Join Us and Make a Difference Today
+            Partner with Us in Making a Difference
           </motion.h2>
           <p className="max-w-2xl mx-auto text-gray-100 text-sm sm:text-base leading-relaxed mb-8">
             Your contribution empowers communities and transforms lives.
@@ -281,7 +205,7 @@ const getInvolvedOptions = [
       "Give your time and skills to support our community initiatives and programs.",
     image:
       "https://www.ualberta.ca/en/youalberta/media-library/2024/01/volunteer.jpg",
-    link: "/donate",
+    link: "/volunteer",
   },
   {
     title: "Donate",

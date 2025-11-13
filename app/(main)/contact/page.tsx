@@ -24,9 +24,9 @@ export default function ContactPage() {
 
   return (
     <PageLayout
-      title="Contact Us - Hiraya Manawari Foundation"
+      title="Contact Us "
       description="Reach out to Hiraya Manawari Foundation. We're here to answer your questions and connect you with our community programs."
-      image="/images/contact/hero.jpg"
+      image="https://www.raymond.in/static/media/Contact%20us%20banner%20.7a073f8d0667605662b2.jpg"
       ctaPrimary={{ label: "Get Involved", href: "/get-involved" }}
       ctaSecondary={{ label: "Donate Now", href: "/donate" }}
     >
@@ -173,16 +173,16 @@ export default function ContactPage() {
                   <p className="font-semibold text-gray-900">Follow Us</p>
                   <div className="flex gap-4 mt-1">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/share/1J4NBPTvve/"
                       className="text-lime-600 font-semibold hover:underline"
                     >
                       Facebook
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/company/hiraya-manawari-foundation/"
                       className="text-lime-600 font-semibold hover:underline"
                     >
-                      Twitter
+                      LinkedIn
                     </a>
                     <a
                       href="#"

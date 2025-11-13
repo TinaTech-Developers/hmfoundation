@@ -10,7 +10,8 @@ const slides = [
     title: "Education for Every Child",
     subtitle:
       "We believe learning is the key to opportunity and lasting change.",
-    image: "/education.jpg",
+    image:
+      "https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg",
     cta: "Support Education",
     href: "/education",
   },

@@ -12,42 +12,21 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  {
-    id: 1,
-    icon: BookOpen,
-    number: "1,200+",
-    label: "Children Educated",
-  },
-  {
-    id: 2,
-    icon: Users,
-    number: "300+",
-    label: "Women Empowered",
-  },
-  {
-    id: 3,
-    icon: Droplet,
-    number: "20+",
-    label: "Clean Water Projects",
-  },
-  {
-    id: 4,
-    icon: Leaf,
-    number: "5,000+",
-    label: "Trees Planted",
-  },
+  { id: 1, icon: BookOpen, number: "100+", label: "Children Assisted" },
+  { id: 2, icon: Users, number: "100+", label: "Elderly Assisted" },
+  { id: 3, icon: Droplet, number: "20+", label: "Projects" },
+  // { id: 4, icon: Leaf, number: "5,000+", label: "Trees Planted" },
 ];
 
-export default function ImpactSection(): JSX.Element {
+export default function ImpactSection() {
   return (
     <section className="relative py-20 sm:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Heading */}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm  font-semibold text-lime-600 uppercase mb-2 inline-block"
         >
           Our Impact
         </motion.span>
@@ -66,8 +45,7 @@ export default function ImpactSection(): JSX.Element {
           communities, restoring environments, and shaping brighter futures.
         </p>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 ">
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
@@ -79,9 +57,9 @@ export default function ImpactSection(): JSX.Element {
                 className="flex flex-col items-center bg-green-50 rounded-2xl p-8 hover:shadow-md hover:bg-green-100 transition-all duration-300"
               >
                 <div className="mb-4 bg-white shadow-sm p-3 rounded-xl">
-                  <Icon className="w-8 h-8 text-green-600" />
+                  <Icon className="w-8 h-8 text-lime-600" />
                 </div>
-                <h4 className="text-3xl sm:text-4xl font-bold text-green-700 mb-2">
+                <h4 className="text-3xl sm:text-4xl font-bold text-lime-700 mb-2">
                   {stat.number}
                 </h4>
                 <p className="text-gray-700 text-sm sm:text-base font-medium">
@@ -92,10 +70,6 @@ export default function ImpactSection(): JSX.Element {
           })}
         </div>
       </div>
-
-      {/* Decorative blobs */}
-      <div className="absolute -top-20 -left-20 w-64 sm:w-80 h-64 sm:h-80 bg-green-100 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute bottom-0 right-0 w-64 sm:w-80 h-64 sm:h-80 bg-green-200 rounded-full blur-3xl opacity-30"></div>
     </section>
   );
 }

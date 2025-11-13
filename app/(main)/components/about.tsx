@@ -21,7 +21,14 @@ export default function About() {
             alt="About Hirayama Nawa Foundation"
             width={600}
             height={400}
-            className="rounded-2xl shadow-md object-cover"
+            className="rounded-2xl shadow-md object-cover my-6 md:my-12"
+          />
+          <Image
+            src="/childdev.jpg"
+            alt="About Hirayama Nawa Foundation"
+            width={600}
+            height={400}
+            className="rounded-2xl shadow-md object-cover my-6 md:my-10"
           />
         </motion.div>
 
@@ -36,44 +43,33 @@ export default function About() {
             Empowering Lives, Building Futures
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            At{" "}
-            <span className="font-semibold text-gray-800">
-              Hirayama Nawa Foundation
-            </span>
-            , we believe in the power of education, empowerment, and
-            environmental sustainability to uplift communities and create
-            lasting change across Zimbabwe.
+            {
+              "Hiraya Manawari Foundation is dedicated to nurturing hope across generations — empowering children to reach their full potential by giving them the best possible start in life, and providing compassionate care for the elderly to ensure their physical, emotional, and social well-being."
+            }
           </p>
 
-          <div className="grid grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols- gap-6 mt-8">
             {[
               {
-                title: "🎓 Education",
-                text: "Supporting access to quality education and youth development.",
+                title: "🎒 Child Development",
+                text: "Ensuring every child receives education, care, and opportunities to reach their full potential.",
               },
               {
-                title: "🌍 Environment",
-                text: "Promoting sustainable farming and green community projects.",
+                title: "👵 Elderly Care",
+                text: "Providing comprehensive support to improve the physical, emotional, and social well-being of the elderly.",
               },
               {
-                title: "🤝 Empowerment",
-                text: "Helping women and families gain self-reliance through skills.",
+                title: "💚 Community Support",
+                text: "Building compassionate communities that nurture both the young and the old through shared care and growth.",
               },
-              {
-                title: "💧 Well-being",
-                text: "Improving access to clean water, health, and nutrition.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.02 }}
-                className="p-4 rounded-xl border border-gray-200 hover:shadow-md transition-all"
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
               >
-                <h3 className="text-lg font-semibold text-green-600 mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600">{item.text}</p>
-              </motion.div>
+                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.text}</p>
+              </div>
             ))}
           </div>
 

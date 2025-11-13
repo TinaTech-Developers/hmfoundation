@@ -23,6 +23,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     { label: "Dashboard", href: "/admin/home" },
     { label: "Donations", href: "/admin/donations" },
     { label: "Programs", href: "/admin/programs" },
+    { label: "Volunteers", href: "/admin/volunteers" },
     { label: "Users", href: "/admin/users" },
     { label: "Newsletters", href: "/admin/newsletters" },
     { label: "Settings", href: "/admin/settings" },

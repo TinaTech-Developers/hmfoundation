@@ -14,25 +14,24 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Clean Water Project",
-    description: "Providing safe water to communities in need.",
-    imageUrl:
-      "https://www.wvi.org/sites/default/files/2022-03/D200-0913-105.jpg",
+    title: "Community Projects",
+    description:
+      "Providing care and support for the elderly and creating opportunities for children to thrive in a safe, nurturing environment. no people faces ngo no peoples faces",
+    imageUrl: "/environment.jpg",
   },
   {
     id: 2,
-    title: "Education for All",
+    title: "Educational Projects",
     description:
-      "Supporting children’s education with resources and scholarships.",
-    imageUrl: "/education.jpg",
+      "Supporting children’s education with learning resources and guidance to help them reach their full potential.",
+    imageUrl: "/educational.jpg",
   },
   {
     id: 3,
-    title: "Women Empowerment",
+    title: "Evironmntal Initiatives",
     description:
-      "Skills and training for women to achieve economic independence.",
-    imageUrl:
-      "https://thumbs.dreamstime.com/b/diversity-women-s-empowerment-hands-color-working-together-women-different-backgrounds-create-hand-mandalas-diversity-wins-135073837.jpg",
+      "Promoting a healthier environment through community projects like tree planting, gardening, and sustainable practices that benefit everyone.",
+    imageUrl: "/environmental_initiatives.jpg",
   },
 ];
 
@@ -54,9 +53,7 @@ export default function FeaturedShowcaseSection() {
             Our Projects Making a Difference
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Each initiative represents our commitment to sustainable impact —
-            bringing education, empowerment, and hope to communities across
-            Zimbabwe.
+            Each initiative represents our commitment to sustainable impact.
           </p>
           <div className="mx-auto mt-4 w-20 h-1 bg-lime-600 rounded-full"></div>
         </motion.div>

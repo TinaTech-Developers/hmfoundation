@@ -13,9 +13,9 @@ import PageLayout from "../components/pagelayout";
 export default function AboutPage() {
   return (
     <PageLayout
-      title="About Us - Hiraya Manawari Foundation"
-      description="Discover the mission, vision, and story behind the Hiraya Manawari Foundation. Learn how we empower communities through education, clean water, and sustainable development."
-      image="/education.jpg"
+      title="About Us"
+      description="Discover the mission, vision, and story behind the Hiraya Manawari Foundation. Learn how we nurture children’s growth and support the elderly through care, education, and community compassion."
+      image="https://www.shutterstock.com/image-photo/teamwork-partnership-concept-hands-raised-600nw-2465435951.jpg"
       ctaPrimary={{ label: "Explore Our Impact", href: "/projects" }}
       ctaSecondary={{ label: "Get Involved", href: "/donate" }}
     >
@@ -37,17 +37,16 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-gray-700  mb-6 leading-relaxed">
-              We are dedicated to empowering communities through education,
-              clean water, and sustainable development. Our vision is a world
-              where opportunity, dignity, and equality are realities for all.
+              The Hiraya Manawari Foundation is committed to creating a caring
+              and supportive community for all generations, where children are
+              nurtured to grow and thrive, and the elderly are valued,
+              respected, and cared for with dignity and compassion.
             </p>
 
             <div className="space-y-4">
               {[
-                "Provide quality education and learning opportunities for every child.",
-                "Implement sustainable access to clean and safe water.",
-                "Empower women through skills training, entrepreneurship, and leadership.",
-                "Build strong, community-driven initiatives that foster lasting change.",
+                "Ensure every child has the best possible start in life by providing support and empowerment to reach their full potential.",
+                "Provide comprehensive care and support for the elderly, ensuring their physical, emotional, and social needs are met.",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="shrink-0 w-6 h-6 bg-green-600 text-white flex items-center justify-center rounded-full text-sm font-bold">
@@ -66,7 +65,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative order-first md:order-last"
           >
-            <div className="rounded-2xl overflow-hidden shadow-2xl h-64 sm:h-80 md:h-96 w-full">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-green-600 h-64 sm:h-80 md:h-96">
               <Image
                 src="/hands-holding-each-other-support.jpg"
                 alt="Our Mission"
@@ -124,19 +123,18 @@ export default function AboutPage() {
               Our Story
             </h2>
             <p className="text-gray-700  leading-relaxed mb-6">
-              Founded in 2015, the{" "}
+              Founded on 24 July 2017, the{" "}
               <span className="font-semibold text-green-700">
                 Hiraya Manawari Foundation
-              </span>{" "}
-              began as a small community initiative focused on supporting
-              children’s education. Guided by compassion and purpose, it quickly
-              grew into a transformative movement serving families across
-              Zimbabwe.
+              </span>
+              {
+                "  began as a small community initiative dedicated to supporting  children’s education and nurturing their potential. Guided by compassion and purpose, it has grown into a foundation committed to creating a caring and supportive environment for both the young and the elderly."
+              }
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Today, our work spans clean water access, women’s empowerment,
-              environmental protection, and sustainable livelihoods — all rooted
-              in the belief that lasting change starts with empowered people.
+              {
+                "Today, we continue to make a positive impact by ensuring that every child receives the best possible start in life and that the elderly are cared for with dignity, love, and respect."
+              }
             </p>
             <div className="border-l-4 border-green-600 pl-4 italic text-gray-600 text-sm sm:text-base">
               “Every step we take is a story of hope, resilience, and
