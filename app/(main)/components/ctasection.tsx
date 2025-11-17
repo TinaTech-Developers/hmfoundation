@@ -17,7 +17,7 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl font-bold mb-4"
         >
-          Join Us in Making a Difference
+          Bring Hope and Support to Those in Need
         </motion.h2>
 
         <motion.p
@@ -26,8 +26,9 @@ export default function CTASection() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-lg sm:text-xl mb-8 text-white/90"
         >
-          Your support empowers communities, provides clean water, and shapes
-          brighter futures. Be part of the change today.
+          Your donation provides wheelchairs to the disabled, care for the
+          elderly, and a safe, nurturing start for children. Help us make a real
+          difference today.
         </motion.p>
 
         <motion.div
@@ -42,12 +43,13 @@ export default function CTASection() {
           >
             Donate Now
           </a>
-          {/* <a
-            href="#volunteer"
+          {/* Uncomment if you want a volunteer button in the future */}
+          <a
+            href="/volunteer"
             className="px-8 py-3 border border-white text-white font-semibold rounded-full shadow-lg hover:bg-white/10 transition"
           >
             Volunteer
-          </a> */}
+          </a>
         </motion.div>
       </div>
     </section>

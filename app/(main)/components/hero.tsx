@@ -7,26 +7,28 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "Education for Every Child",
+    title: "Supporting Children With Care & Opportunity",
     subtitle:
-      "We believe learning is the key to opportunity and lasting change.",
+      "We help children grow with guidance, protection, and the support they need to reach their full potential.",
     image:
       "https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg",
-    cta: "Support Education",
-    href: "/education",
+    cta: "Support Children",
+    href: "/children",
   },
   {
-    title: "Empowering Communities",
-    subtitle: "Creating sustainable livelihoods through skills and unity.",
-    image: "/empowering_communities.png",
-    cta: "Join Our Programs",
-    href: "/empowerment",
+    title: "Caring for the Elderly With Dignity",
+    subtitle:
+      "We provide compassion, connection, and support to ensure every elderly person feels valued and cared for.",
+    image: "/elderly_care.jpg",
+    cta: "Support Elderly Care",
+    href: "/elderly",
   },
   {
-    title: "Protecting Our Environment",
-    subtitle: "Together we plant hope for a greener, cleaner future.",
+    title: "Protecting the Environment Together",
+    subtitle:
+      "Our cleanups and tree-planting efforts help rebuild greener, healthier spaces for future generations.",
     image: "/environment.jpg",
-    cta: "Take Action",
+    cta: "Join Environmental Action",
     href: "/environment",
   },
 ];
@@ -68,7 +70,7 @@ export default function HeroSlider() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="backdrop-blur-sm bg-black/40 p-8 md:p-12 rounded-2xl shadow-xl max-w-2xl"
             >
-              <h1 className="text-3xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-md">
+              <h1 className="text-2xl md:text-4xl font-bold text-white mb-4 leading-tight drop-shadow-md">
                 {slide.title}
               </h1>
               <p className="text-white/90 text-base md:text-lg mb-8">

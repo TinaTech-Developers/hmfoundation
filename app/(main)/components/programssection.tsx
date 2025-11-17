@@ -1,5 +1,6 @@
 // components/ProgramsEnhancedSection.jsx
 "use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BookOpen, Users, Leaf } from "lucide-react";
@@ -8,30 +9,30 @@ const items = [
   {
     title: "Education",
     blurb:
-      "Ensure every child has the best possible start in life by providing support and empowerment to reach their full potential.",
+      "Empowering children to reach their full potential by providing quality education, mentorship, and essential learning resources.",
     icon: <BookOpen className="w-7 h-7 text-green-600" />,
   },
   {
     title: "Community Care",
     blurb:
-      "Uplifting communities through volunteer programs, skills development, and compassionate support for the elderly and those in need.",
+      "Supporting communities through volunteer initiatives, skills development, and care programs for the elderly and vulnerable.",
     icon: <Users className="w-7 h-7 text-green-600" />,
   },
   {
     title: "Environment",
     blurb:
-      "Promoting environmental responsibility through tree planting, community cleanups, and awareness campaigns for a greener future.",
+      "Promoting sustainability through tree planting, community cleanups, and awareness campaigns for a healthier planet.",
     icon: <Leaf className="w-7 h-7 text-green-600" />,
   },
 ];
 
 export default function ProgramsSection() {
   return (
-    <section className="relative py-20 sm:py-24 bg-linear-to-b from-white to-green-50 overflow-hidden">
+    <section className="relative py-20 sm:py-24 bg-gradient-to-b from-white to-green-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <span className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block">
-          Services
+          Our Services
         </span>
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
@@ -42,13 +43,13 @@ export default function ProgramsSection() {
           What We Do
         </motion.h3>
         <p className="text-gray-600 mb-12 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          We are committed to building a better tomorrow through education,
-          empowerment, and environmental action.
+          We are dedicated to creating a brighter future through education,
+          community support, and environmental stewardship.
         </p>
 
-        {/* Cards */}
+        {/* Program Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {items.map((it, i) => (
+          {items.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -59,20 +60,20 @@ export default function ProgramsSection() {
             >
               <div className="flex items-center justify-center sm:justify-start mb-5">
                 <div className="w-14 h-14 flex items-center justify-center bg-green-100 rounded-xl">
-                  {it.icon}
+                  {item.icon}
                 </div>
               </div>
               <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
-                {it.title}
+                {item.title}
               </h4>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                {it.blurb}
+                {item.blurb}
               </p>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA */}
+        {/* Call to Action */}
         <div className="mt-14 sm:mt-16">
           <Link
             href="/programs"
@@ -83,9 +84,10 @@ export default function ProgramsSection() {
         </div>
       </div>
 
-      {/* Decorative background orbs */}
+      {/* Decorative Background Orbs */}
       <div className="absolute -top-24 -right-24 w-64 sm:w-96 h-64 sm:h-96 bg-green-100 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-64 sm:w-80 h-64 sm:h-80 bg-green-200 rounded-full blur-3xl opacity-30"></div>
     </section>
   );
 }
+  

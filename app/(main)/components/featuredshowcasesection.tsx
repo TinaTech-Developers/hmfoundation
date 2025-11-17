@@ -70,7 +70,7 @@ export default function FeaturedShowcaseSection() {
             className="mt-4 text-gray-700 max-w-2xl mx-auto"
           >
             Empowering lives, enriching communities. Our mission is to nurture
-            children, care for the elderly, and strengthen communities with
+            children, care for the elderly, and strengthen communities through
             compassion, faith, and the generosity of our supporters.
           </motion.p>
         </div>

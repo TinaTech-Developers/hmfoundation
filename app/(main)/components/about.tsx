@@ -21,14 +21,14 @@ export default function About() {
             alt="About Hirayama Nawa Foundation"
             width={600}
             height={400}
-            className="rounded-2xl shadow-md object-cover my-6 md:my-12"
+            className="rounded-2xl shadow-2xl shadow-green-900 object-cover my-6 md:my-12"
           />
           <Image
             src="/childdev.jpg"
             alt="About Hirayama Nawa Foundation"
             width={600}
             height={400}
-            className="rounded-2xl shadow-md object-cover my-6 md:my-10"
+            className="rounded-2xl shadow-2xl shadow-green-900 object-cover my-6 md:my-10"
           />
         </motion.div>
 
