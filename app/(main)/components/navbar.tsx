@@ -33,7 +33,7 @@ export default function FloatingNavbar() {
     <>
       {/* Floating Animated Gradient Background */}
       <motion.div
-        className="fixed top-0 left-0 w-full h-24 z-30 rounded-b-3xl pointer-events-none"
+        className="fixed top-0 left-0 w-full h-20 z-30 rounded-b-3xl pointer-events-none"
         style={{
           background:
             "linear-gradient(270deg, rgba(40,167,69,0.2), rgba(168,224,99,0.2), rgba(40,167,69,0.2))",
@@ -53,7 +53,7 @@ export default function FloatingNavbar() {
           scrolled ? "shadow-2xl" : "shadow-lg"
         }`}
       >
-        <div className="flex items-center justify-between px-6 py-1">
+        <div className="flex items-center justify-between px-6 py-3">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -62,9 +62,11 @@ export default function FloatingNavbar() {
             <Image
               src="/hiraya_logo.png"
               alt="Hiraya Logo"
-              width={50}
-              height={50}
-              className="h-20 w-20 object-contain"
+              width={150}
+              height={150}
+              quality={100}
+              className=" object-contain"
+              priority
             />
           </motion.div>
 

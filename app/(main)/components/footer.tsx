@@ -80,6 +80,16 @@ export default function ProfessionalFooter() {
                 </a>
               </li>
               <li>
+                Email:{" "}
+                <a
+                  href="mailto:hirayamanawari.foundation@gmail.com"
+                  className="hover:text-lime-500 transition"
+                >
+                  hirayamanawari.foundation@gmail.com
+                </a>
+              </li>
+
+              <li>
                 Phone:{" "}
                 <a
                   href="tel:+263123456789"
