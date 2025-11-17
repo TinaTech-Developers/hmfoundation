@@ -7,29 +7,29 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "Supporting Children With Care & Opportunity",
+    title: "Enhancing Lives: Children",
     subtitle:
-      "We help children grow with guidance, protection, and the support they need to reach their full potential.",
+      "We ensure every child has the best possible start in life by providing support, guidance, and opportunities that help them grow and reach their full potential.",
     image:
       "https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg",
     cta: "Support Children",
     href: "/children",
   },
   {
-    title: "Caring for the Elderly With Dignity",
+    title: "Enhancing Lives: Elderly",
     subtitle:
-      "We provide compassion, connection, and support to ensure every elderly person feels valued and cared for.",
+      "We provide comprehensive care and support for the elderly, ensuring their physical, emotional, and social needs are met with dignity and compassion.",
     image: "/elderly_care.jpg",
     cta: "Support Elderly Care",
     href: "/elderly",
   },
   {
-    title: "Protecting the Environment Together",
+    title: "Reaching Communities: Projects",
     subtitle:
-      "Our cleanups and tree-planting efforts help rebuild greener, healthier spaces for future generations.",
+      "We extend our impact through community-based projects that support vulnerable children and elderly individuals, ensuring they receive care, resources, and opportunities where they live.",
     image: "/environment.jpg",
-    cta: "Join Environmental Action",
-    href: "/environment",
+    cta: "Explore Projects",
+    href: "/projects",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function HeroSlider() {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-6 text-center">
+          <div className="absolute inset-0 md:top-28 bg-black/50 flex items-center justify-center px-6 text-center ">
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: current === index ? 1 : 0 }}
