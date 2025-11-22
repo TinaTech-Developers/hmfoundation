@@ -28,7 +28,7 @@ export default function ContactPage() {
       description="Reach out to Hiraya Manawari Foundation. We're here to answer your questions and connect you with our community programs."
       image="https://www.raymond.in/static/media/Contact%20us%20banner%20.7a073f8d0667605662b2.jpg"
       ctaPrimary={{ label: "Get Involved", href: "/get-involved" }}
-      ctaSecondary={{ label: "Donate Now", href: "/donate" }}
+      ctaSecondary={{ label: "Donate ", href: "/donate" }}
     >
       {/* Hero Section */}
       <section className="relative py-24 bg-linear-to-b from-green-50 via-white to-white text-center overflow-hidden">
@@ -47,26 +47,28 @@ export default function ContactPage() {
             transition={{ delay: 0.2 }}
             className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
           >
-            Have questions, suggestions, or want to collaborate? We’d love to
-            hear from you.
+            Have questions, suggestions, or want to collaborate? <br /> We’d
+            love to hear from you.
           </motion.p>
         </div>
       </section>
       {/* Contact Form & Info */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="w-full"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center lg:text-left">
               Send Us a Message
             </h2>
+
             <form
               onSubmit={handleSubmit}
-              className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
+              className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 w-full"
             >
               <div className="relative">
                 <input
@@ -75,13 +77,18 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition"
-                  placeholder="Your Name"
+                  className="peer w-full px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition text-sm sm:text-base"
+                  placeholder=" "
                 />
-                <label className="absolute left-4 -top-3.5 text-gray-500 text-sm peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">
+                <label
+                  className="absolute left-4 top-3 text-gray-500 text-sm transition-all
+            peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-lime-600"
+                >
                   Name
                 </label>
               </div>
+
               <div className="relative">
                 <input
                   type="email"
@@ -89,13 +96,18 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition"
-                  placeholder="Your Email"
+                  className="peer w-full px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition text-sm sm:text-base"
+                  placeholder=" "
                 />
-                <label className="absolute left-4 -top-3.5 text-gray-500 text-sm peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">
+                <label
+                  className="absolute left-4 top-3 text-gray-500 text-sm transition-all
+            peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-lime-600"
+                >
                   Email
                 </label>
               </div>
+
               <div className="relative">
                 <textarea
                   name="message"
@@ -103,16 +115,21 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition resize-none"
-                  placeholder="Your Message"
+                  className="peer w-full px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-lime-600 transition text-sm sm:text-base resize-none"
+                  placeholder=" "
                 />
-                <label className="absolute left-4 -top-3.5 text-gray-500 text-sm peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">
+                <label
+                  className="absolute left-4 top-3 text-gray-500 text-sm transition-all
+            peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-lime-600"
+                >
                   Message
                 </label>
               </div>
+
               <button
                 type="submit"
-                className="bg-lime-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-lime-700 transition w-full"
+                className="bg-lime-600 text-white font-semibold px-6 py-3 sm:py-4 rounded-lg shadow hover:bg-lime-700 transition w-full text-sm sm:text-base"
               >
                 Send Message
               </button>
@@ -138,7 +155,8 @@ export default function ContactPage() {
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
                   <p className="text-gray-700">
-                    info@hirayamanawarifoundation.com
+                    info@hirayamanawarifoundation.com <br />
+                    hirayamanawari.foundation@gmail.com
                   </p>
                 </div>
               </div>
@@ -222,8 +240,8 @@ export default function ContactPage() {
           Ready to Make a Difference?
         </motion.h2>
         <p className="max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
-          Volunteer your time or support our programs to empower communities
-          across Zimbabwe.
+          {/* Volunteer your time or support our programs to empower communities
+          across Zimbabwe. */}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
@@ -236,7 +254,7 @@ export default function ContactPage() {
             href="/donate"
             className="bg-transparent border border-white mx-4 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-green-800 transition"
           >
-            Donate Now
+            Donate
           </a>
         </div>
       </section>

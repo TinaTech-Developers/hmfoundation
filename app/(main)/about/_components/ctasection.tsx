@@ -26,8 +26,8 @@ export default function CTASection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-white text-lg sm:text-xl mb-8"
         >
-          Your support empowers communities, educates children, and creates a
-          sustainable future.
+          {/* Your support empowers communities, educates children, and creates a
+          sustainable future. */}
         </motion.p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -35,7 +35,7 @@ export default function CTASection() {
             href="/donate"
             className="px-8 py-3 bg-white text-lime-600 font-semibold rounded-full shadow hover:bg-gray-100 transition"
           >
-            Donate Now
+            Donate
           </a>
           <a
             href="/volunteer"

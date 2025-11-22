@@ -14,9 +14,9 @@ export default function AboutPage() {
   return (
     <PageLayout
       title="About Us"
-      description="Discover the mission, vision, and story behind the Hiraya Manawari Foundation. Learn how we nurture children’s growth and support the elderly through care, education, and community compassion."
+      description="Discover the mission, vision, and story behind the Hiraya Manawari Foundation."
       image="https://www.shutterstock.com/image-photo/teamwork-partnership-concept-hands-raised-600nw-2465435951.jpg"
-      ctaPrimary={{ label: "Explore Our Impact", href: "/projects" }}
+      // ctaPrimary={{ label: "Explore Our Impact", href: "/projects" }}
       ctaSecondary={{ label: "Get Involved", href: "/donate" }}
     >
       {/* Hero Section */}
@@ -75,11 +75,12 @@ export default function AboutPage() {
               />
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2  sm:-bottom-6 sm:left-32 bg-green-600 text-white px-4 sm:px-6 py-3 rounded-xl shadow-lg text-center sm:text-left w-[80%] sm:w-auto">
-              <p className="font-semibold text-base sm:text-lg">
+              {/* <p className="font-semibold text-base sm:text-lg">
                 Driven by Purpose
-              </p>
+              </p> */}
               <p className="text-xs sm:text-sm opacity-90">
-                Founded in hope, growing through impact.
+                Founded in hope, guided by compassion, empowered dy the
+                community, and inspired by faith.
               </p>
             </div>
           </motion.div>
@@ -109,7 +110,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:-left-4 sm:translate-x-0 bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg text-xs sm:text-sm font-medium whitespace-nowrap">
-              Est. 2015 — Making Impact
+              Est. 2017 — Making Impact
             </div>
           </motion.div>
 
@@ -132,9 +133,10 @@ export default function AboutPage() {
               }
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              {
-                "Today, we continue to make a positive impact by ensuring that every child receives the best possible start in life and that the elderly are cared for with dignity, love, and respect."
-              }
+              {"Today, we continue to make a positive impact. "}
+              {/* by ensuring that every child receives the best possible start in
+              life and that the elderly are cared for with dignity, love, and
+              respect. */}
             </p>
             <div className="border-l-4 border-green-600 pl-4 italic text-gray-600 text-sm sm:text-base">
               “Every step we take is a story of hope, resilience, and
@@ -146,8 +148,8 @@ export default function AboutPage() {
 
       {/* Other Sections */}
       <ImpactSection />
-      <FeaturedShowcaseSection />
-      <CommunityTestimonialsCarousel />
+      {/* <FeaturedShowcaseSection /> */}
+      {/* <CommunityTestimonialsCarousel /> */}
       <CTASection />
     </PageLayout>
   );

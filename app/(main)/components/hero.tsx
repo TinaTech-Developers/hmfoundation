@@ -19,7 +19,7 @@ const slides = [
     title: "Enhancing Lives: Elderly",
     subtitle:
       "We provide comprehensive care and support for the elderly, ensuring their physical, emotional, and social needs are met with dignity and compassion.",
-    image: "/elderly_care.jpg",
+    image: "/rear-view-retired-couple-walking-sunset.jpg",
     cta: "Support Elderly Care",
     href: "/elderly",
   },
@@ -29,7 +29,7 @@ const slides = [
       "We extend our impact through community-based projects that support vulnerable children and elderly individuals, ensuring they receive care, resources, and opportunities where they live.",
     image: "/environment.jpg",
     cta: "Explore Projects",
-    href: "/projects",
+    href: "/programs",
   },
 ];
 

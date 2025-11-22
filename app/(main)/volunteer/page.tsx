@@ -58,7 +58,7 @@ export default function VolunteerPage() {
             Volunteer With Us
           </h1>
           <p className="text-gray-700 mb-8">
-            Join the Hiraya Manawari Foundation and help create meaningful
+            Join the Hiraya Manawari Foundation and help create a meaningful
             change.
           </p>
 
@@ -151,7 +151,7 @@ export default function VolunteerPage() {
           >
             Your Time Makes a Difference
           </motion.h3>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -160,7 +160,7 @@ export default function VolunteerPage() {
             Whether you support children, care for the elderly, or help with
             community projects, your involvement helps us empower individuals
             and strengthen communities.
-          </motion.p>
+          </motion.p> */}
         </section>
 
         {/* Modal */}

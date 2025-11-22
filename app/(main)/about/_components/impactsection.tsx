@@ -13,7 +13,7 @@ interface Stat {
 
 const stats: Stat[] = [
   { id: 1, icon: BookOpen, number: "100+", label: "Children Assisted" },
-  { id: 2, icon: Users, number: "100+", label: "Elderly Assisted" },
+  { id: 2, icon: Users, number: "100+", label: "Elderly People Assisted" },
   { id: 3, icon: Droplet, number: "20+", label: "Projects" },
   // { id: 4, icon: Leaf, number: "5,000+", label: "Trees Planted" },
 ];

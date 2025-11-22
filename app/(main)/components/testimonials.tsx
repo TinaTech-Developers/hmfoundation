@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
     quote:
       "It continuously gives us good information about what needs to be done and what is done. Hiraya Manawari Foundation makes a very big difference in many positive ways to the children’s lives and gives them hope for the future. It is so worthwhile supporting these children and their communities through Hiraya Manawari Foundation.",
     photoUrl:
-      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
+      "https://lh3.googleusercontent.com/a-/ALV-UjU0wh2LXCV0kvhE5oCHYYGsl2IbHbhGN9XDvffweDY2u-nFd0Y=w72-h72-p-rp-mo-br100",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
     quote:
       "It has been great being part of the intiative which is dedicated to serve and save lifes at the same time. Hiraya Manawari is a true testament of giving back to community.",
     photoUrl:
-      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
+      "https://lh3.googleusercontent.com/a-/ALV-UjVBk7Gt86SsSoAfsxjoOD5Iv5X9JcSNVwKD9m0GFCPw3iK2VJ0=w72-h72-p-rp-mo-br100",
   },
   {
     id: 3,

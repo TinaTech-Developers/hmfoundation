@@ -60,7 +60,7 @@ export default function About() {
               },
               {
                 title: "💚 Community Support",
-                text: "Building compassionate communities that nurture both the young and the old through shared care and growth.",
+                text: "Building compassionate communities that nurture both the young and the elderly through shared care and growth.",
               },
             ].map((item, index) => (
               <div

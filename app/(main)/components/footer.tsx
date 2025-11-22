@@ -1,5 +1,6 @@
 "use client";
 
+import { MailIcon, MailOpen } from "lucide-react";
 import React from "react";
 import {
   FaFacebookF,
@@ -29,9 +30,7 @@ export default function ProfessionalFooter() {
               Hiraya Manawari Foundation
             </h3>
             <p className="text-gray-400 text-sm">
-              Hiraya Manawari Foundation nurtures hope across generations —
-              empowering children to reach their full potential and providing
-              compassionate care that supports the well-being of the elderly.
+              Hiraya Manawari Foundation nurtures hope across generations
             </p>
           </div>
 
@@ -52,8 +51,8 @@ export default function ProfessionalFooter() {
                 </a>
               </li>
               <li>
-                <a href="/projects" className="hover:text-lime-500 transition">
-                  Projects
+                <a href="/programs" className="hover:text-lime-500 transition">
+                  Programs
                 </a>
               </li>
               <li>
@@ -92,13 +91,13 @@ export default function ProfessionalFooter() {
               <li>
                 Phone:{" "}
                 <a
-                  href="tel:+263123456789"
+                  href="tel:+263712461873"
                   className="hover:text-lime-500 transition"
                 >
-                  +263 123 456 789
+                  +263 71 246 1873
                 </a>
               </li>
-              <li>Address: 123 NGO Street, Harare, Zimbabwe</li>
+              <li>Address: Harare, Zimbabwe</li>
             </ul>
           </div>
 
@@ -111,7 +110,7 @@ export default function ProfessionalFooter() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                className="w-full px-4 py-2 rounded-full bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-lime-500"
               />
               <button
                 type="submit"
@@ -128,10 +127,10 @@ export default function ProfessionalFooter() {
                 <FaFacebookF />
               </a>
               <a
-                href="#"
+                href="mailto:hirayamanawari.foundation@gmail.com"
                 className="text-gray-400 hover:text-lime-500 transition"
               >
-                <FaTwitter />
+                <MailIcon size={18} />
               </a>
               <a
                 href="#"
@@ -165,15 +164,14 @@ export default function ProfessionalFooter() {
         <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} Hiraya Manawari Foundation. All
           rights reserved. <br />
-          Developed by{" "}
-          <a
+          {/* <a
             href="https://tinasoftnexus.co.zw"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lime-500 hover:underline"
           >
             TinasoftNexus
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

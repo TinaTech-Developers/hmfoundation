@@ -20,7 +20,7 @@ export default function CTASection() {
           Bring Hope and Support to Those in Need
         </motion.h2>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
@@ -29,19 +29,19 @@ export default function CTASection() {
           Your donation provides wheelchairs to the disabled, care for the
           elderly, and a safe, nurturing start for children. Help us make a real
           difference today.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row justify-center gap-4"
+          className="flex flex-col sm:flex-row justify-center gap-4 md:mt-10"
         >
           <a
             href="/donate"
             className="px-8 py-3 bg-white text-lime-600 font-semibold rounded-full shadow-lg hover:bg-white/90 transition"
           >
-            Donate Now
+            Donate
           </a>
           {/* Uncomment if you want a volunteer button in the future */}
           <a

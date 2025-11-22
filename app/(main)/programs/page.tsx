@@ -39,20 +39,23 @@ export default function ProgramsPage() {
   return (
     <PageLayout
       title="Our Programs "
-      description="Explore the transformative programs driving our mission — supporting children’s education, caring for the elderly, and fostering strong, empowered communities."
+      description="Explore the transformative programs driving our mission "
       image="https://reintegrationfacility.eu/wp-content/uploads/2024/09/NGO-training-950x482.jpg"
       ctaPrimary={{ label: "Get Involved", href: "/get-involved" }}
-      ctaSecondary={{ label: "Donate Now", href: "/donate" }}
+      ctaSecondary={{ label: "Donate", href: "/donate" }}
     >
+      {/* — supporting children’s education, caring for the elderly, and fostering
+      strong, empowered communities. */}
       <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+            className="text-xl sm:text-2xl font-bold text-gray-900 mb-4"
           >
-            Empowering Communities Through Action
+            Our programs are designed to create lasting change
+            {/* Empowering Communities Through Action */}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -60,13 +63,13 @@ export default function ProgramsPage() {
             transition={{ delay: 0.2 }}
             className="text-gray-700 max-w-3xl mx-auto leading-relaxed"
           >
-            Our programs are designed to create lasting change — nurturing
+            {/* Our programs are designed to create lasting change */}
+            {/* — nurturing
             education, improving livelihoods, and protecting our environment for
-            generations to come.
+            generations to come. */}
           </motion.p>
         </div>
       </section>
-
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {loading ? (

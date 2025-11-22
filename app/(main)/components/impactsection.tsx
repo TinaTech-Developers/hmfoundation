@@ -13,7 +13,7 @@ interface Stat {
 
 const stats: Stat[] = [
   { id: 1, icon: BookOpen, number: "100+", label: "Children Assisted" },
-  { id: 2, icon: Users, number: "100+", label: "Elderly Assisted" },
+  { id: 2, icon: Users, number: "100+", label: "Elderly People Assisted" },
   { id: 3, icon: Droplet, number: "20+", label: "Projects" },
   // { id: 4, icon: Leaf, number: "5,000+", label: "Trees Planted" },
 ];
@@ -41,8 +41,8 @@ export default function ImpactSection() {
         </motion.h3>
 
         <p className="text-gray-600 mb-12 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          Every program we run contributes to meaningful change — empowering
-          communities, restoring environments, and shaping brighter futures.
+          Every program we run contributes to meaningful change
+          {/* — empowering communities, restoring environments, and shaping brighter futures. */}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 ">

@@ -22,6 +22,7 @@ interface NewsArticle {
 export default function NewsPage() {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -39,12 +40,19 @@ export default function NewsPage() {
     fetchArticles();
   }, []);
 
+  // Filter articles by selected category
+  const filteredArticles = selectedCategory
+    ? articles.filter((article) => article.category === selectedCategory)
+    : articles;
+
+  // Unique categories from articles
+  const categories = Array.from(new Set(articles.map((a) => a.category)));
+
   return (
     <PageLayout
       title="News & Updates "
       description="Stay informed with stories, community updates, and highlights from our projects and partners."
       image="https://mediadna.com.ng/wp-content/uploads/2019/05/Newspaper.png"
-      ctaPrimary={{ label: "Join Our Newsletter", href: "/subscribe" }}
     >
       {/* Hero Section */}
       <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 text-center relative overflow-hidden">
@@ -59,8 +67,8 @@ export default function NewsPage() {
             The Hiraya Journal
           </motion.h1>
           <p className="text-gray-700 leading-relaxed text-lg">
-            Inspiring stories, impact highlights, and updates from our projects
-            and partners — curated to keep you informed and connected.
+            Inspiring stories, impactful highlights, and updates from our
+            projects and partners — curated to keep you informed and connected.
           </p>
         </div>
       </section>
@@ -72,51 +80,49 @@ export default function NewsPage() {
           <div className="lg:col-span-2 space-y-10">
             {loading ? (
               <p className="text-gray-500">Loading articles...</p>
-            ) : articles.length === 0 ? (
-              <p className="text-gray-500">No news articles available.</p>
+            ) : filteredArticles.length === 0 ? (
+              <p className="text-gray-500">No articles in this category.</p>
             ) : (
               <>
                 {/* Featured Article */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="overflow-hidden rounded-3xl shadow-lg bg-white"
-                >
-                  {articles[0] && (
-                    <>
-                      <div className="relative h-80 w-full">
-                        <Image
-                          src={articles[0].image}
-                          alt={articles[0].title}
-                          fill
-                          className="object-cover rounded-t-3xl"
-                        />
-                      </div>
-                      <div className="p-8">
-                        <span className="text-green-700 text-sm font-semibold">
-                          {articles[0].category.toUpperCase()}
-                        </span>
-                        <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
-                          {articles[0].title}
-                        </h2>
-                        <p className="text-gray-700 mb-6">
-                          {articles[0].excerpt}
-                        </p>
-                        <Link
-                          href={`/news/$${articles[0]._id}`}
-                          className="text-lime-700 font-medium hover:underline"
-                        >
-                          Read More →
-                        </Link>
-                      </div>
-                    </>
-                  )}
-                </motion.div>
+                {filteredArticles[0] && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="overflow-hidden rounded-3xl shadow-lg bg-white"
+                  >
+                    <div className="relative h-80 w-full">
+                      <Image
+                        src={filteredArticles[0].image}
+                        alt={filteredArticles[0].title}
+                        fill
+                        className="object-cover rounded-t-3xl"
+                      />
+                    </div>
+                    <div className="p-8">
+                      <span className="text-green-700 text-sm font-semibold">
+                        {filteredArticles[0].category.toUpperCase()}
+                      </span>
+                      <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
+                        {filteredArticles[0].title}
+                      </h2>
+                      <p className="text-gray-700 mb-6">
+                        {filteredArticles[0].excerpt}
+                      </p>
+                      <Link
+                        href={`/news/${filteredArticles[0]._id}`}
+                        className="text-lime-700 font-medium hover:underline"
+                      >
+                        Read More →
+                      </Link>
+                    </div>
+                  </motion.div>
+                )}
 
                 {/* Articles Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  {articles.slice(1).map((article, i) => (
+                  {filteredArticles.slice(1).map((article, i) => (
                     <motion.div
                       key={article._id}
                       initial={{ opacity: 0, y: 20 }}
@@ -163,22 +169,36 @@ export default function NewsPage() {
             <div className="bg-gray-50 rounded-2xl shadow-sm border border-gray-100 p-6">
               <h3 className="font-semibold text-gray-900 mb-4">Categories</h3>
               <ul className="space-y-2">
-                {["Education", "Environment", "Health", "Community"].map(
-                  (cat, i) => (
-                    <li key={i}>
-                      <Link
-                        href="#"
-                        className="text-gray-700 hover:text-lime-700 transition"
-                      >
-                        {cat}
-                      </Link>
-                    </li>
-                  )
-                )}
+                <li>
+                  <button
+                    onClick={() => setSelectedCategory(null)}
+                    className={`w-full text-left transition ${
+                      !selectedCategory
+                        ? "text-lime-700 font-bold"
+                        : "text-gray-700 hover:text-lime-700"
+                    }`}
+                  >
+                    All
+                  </button>
+                </li>
+                {categories.map((cat, i) => (
+                  <li key={i}>
+                    <button
+                      onClick={() => setSelectedCategory(cat)}
+                      className={`w-full text-left transition ${
+                        selectedCategory === cat
+                          ? "text-lime-700 font-bold"
+                          : "text-gray-700 hover:text-lime-700"
+                      }`}
+                    >
+                      {cat}
+                    </button>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Subscribe Box */}
+            {/* Subscribe Box (still here, unchanged 🎉) */}
             <div className="bg-lime-50 border border-lime-100 rounded-2xl p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-3">
                 Subscribe for Updates
@@ -205,8 +225,8 @@ export default function NewsPage() {
         </div>
       </section>
 
-      <PartnerSpotlightSection />
-      <CommunityTestimonialsCarousel />
+      {/* <PartnerSpotlightSection /> */}
+      {/* <CommunityTestimonialsCarousel /> */}
     </PageLayout>
   );
 }

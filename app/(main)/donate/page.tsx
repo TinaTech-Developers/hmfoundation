@@ -84,12 +84,15 @@ export default function DonatePage() {
       image="https://cloudfront-us-east-1.images.arcpublishing.com/pmn/D2LTRFIHZZEXTAJ55QIZBWGJEU.jpg"
       ctaPrimary={{ label: "Donate Now", href: "#donate-section" }}
     >
-      <div className="bg-gray-50 min-h-screen text-gray-900">
-        <section className="py-12 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center gap-4 mb-8">
+      <div
+        id="donate-section"
+        className="bg-gray-50 min-h-screen text-gray-900"
+      >
+        <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
             <button
               onClick={() => setDonationType("cash")}
-              className={`px-6 py-3 rounded-full font-semibold transition ${
+              className={`px-6 py-3 rounded-full font-semibold transition w-full sm:w-auto ${
                 donationType === "cash"
                   ? "bg-lime-600 text-white"
                   : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
@@ -99,7 +102,7 @@ export default function DonatePage() {
             </button>
             <button
               onClick={() => setDonationType("items")}
-              className={`px-6 py-3 rounded-full font-semibold transition ${
+              className={`px-6 py-3 rounded-full font-semibold transition w-full sm:w-auto ${
                 donationType === "items"
                   ? "bg-lime-600 text-white"
                   : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
@@ -137,44 +140,35 @@ export default function DonatePage() {
                   placeholder="Custom amount"
                   value={customAmount}
                   onChange={handleCustomAmountChange}
-                  className="w-40 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  className="w-48 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
                 />
               </div>
 
               <form
                 onSubmit={handleCashDonate}
-                className="max-w-md mx-auto bg-white rounded-2xl p-8 shadow-md"
+                className="max-w-md mx-auto bg-white rounded-2xl p-6 sm:p-8 shadow-md"
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                   Your Information
                 </h3>
 
-                <div className="mb-4">
-                  <label className="block text-gray-700 mb-1">Full Name</label>
+                <div className="space-y-4">
                   <input
                     type="text"
                     name="name"
                     required
-                    placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                    placeholder="Full Name"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                   />
-                </div>
 
-                <div className="mb-4">
-                  <label className="block text-gray-700 mb-1">Email</label>
                   <input
                     type="email"
                     name="email"
                     required
                     placeholder="you@example.com"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                   />
-                </div>
 
-                <div className="mb-6">
-                  <label className="block text-gray-700 mb-1">
-                    Donation Amount
-                  </label>
                   <input
                     type="text"
                     value={`$${amount}`}
@@ -185,7 +179,7 @@ export default function DonatePage() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
+                  className="mt-6 w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
                 >
                   Donate ${amount}
                 </button>
@@ -197,63 +191,49 @@ export default function DonatePage() {
           {donationType === "items" && (
             <form
               onSubmit={handleItemsDonate}
-              className="max-w-md mx-auto bg-white rounded-2xl p-8 shadow-md"
+              className="max-w-md mx-auto bg-white rounded-2xl p-6 sm:p-8 shadow-md"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                 Donate Items
               </h3>
 
-              <div className="mb-4">
-                <label className="block text-gray-700 mb-1">Full Name</label>
+              <div className="space-y-4">
                 <input
                   type="text"
                   name="name"
                   required
-                  placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  placeholder="Full Name"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                 />
-              </div>
 
-              <div className="mb-4">
-                <label className="block text-gray-700 mb-1">Email</label>
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="you@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                 />
-              </div>
 
-              <div className="mb-4">
-                <label className="block text-gray-700 mb-1">
-                  Items to Donate
-                </label>
                 <textarea
                   name="items"
                   required
                   placeholder="Describe the items you would like to donate"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                   rows={4}
                 />
-              </div>
 
-              <div className="mb-6">
-                <label className="block text-gray-700 mb-1">
-                  Pickup / Delivery Details
-                </label>
                 <textarea
                   name="details"
                   required
-                  placeholder="Your address or preferred method for item drop-off"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  placeholder="Pickup or delivery details"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
                   rows={2}
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
+                className="mt-6 w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
               >
                 Submit Item Donation
               </button>
@@ -261,7 +241,8 @@ export default function DonatePage() {
           )}
         </section>
 
-        <section className="py-20 bg-gray-100 text-center">
+        {/* Bottom message */}
+        <section className="py-20 bg-gray-100 text-center px-4">
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -270,6 +251,7 @@ export default function DonatePage() {
           >
             Your Donation Matters
           </motion.h3>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

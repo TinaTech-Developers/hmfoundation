@@ -17,7 +17,8 @@ const projects: Project[] = [
     title: "Community Projects",
     description:
       "Providing care and support for the elderly and creating opportunities for children to thrive in a safe, nurturing environment. no people faces ngo no peoples faces",
-    imageUrl: "/environment.jpg",
+    imageUrl:
+      "/group-happy-african-volunteers-planting-tree-park-africa-volunteering-charity-people-ecology-concept.jpg",
   },
   {
     id: 2,

@@ -116,7 +116,7 @@ export default function GetInvolvedPage() {
             Partner with Us in Making a Difference
           </motion.h2>
           <p className="max-w-2xl mx-auto text-gray-100 text-sm sm:text-base leading-relaxed mb-8">
-            Your contribution empowers communities and transforms lives.
+            Your contributions empowers communities and transforms lives.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
@@ -219,15 +219,15 @@ const getInvolvedOptions = [
     description:
       "Collaborate with us as an organization, school, or business to expand our reach.",
     image: "https://www.gjournals.org/wp-content/uploads/2022/05/Clip77.png",
-    link: "/donate",
+    link: "/volunter",
   },
-  {
-    title: "Events",
-    description:
-      "Join or organize events that raise awareness and funds for community development.",
-    image: "/empowering_communities.png",
-    link: "/programs",
-  },
+  // {
+  //   title: "Events",
+  //   description:
+  //     "Join or organize events that raise awareness and funds for community development.",
+  //   image: "/empowering_communities.png",
+  //   link: "/programs",
+  // },
 ];
 
 const volunteerTestimonials = [
