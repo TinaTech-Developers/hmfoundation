@@ -52,7 +52,7 @@ export default function NewsPage() {
     <PageLayout
       title="News & Updates "
       description="Stay informed with stories, community updates, and highlights from our projects and partners."
-      image="https://mediadna.com.ng/wp-content/uploads/2019/05/Newspaper.png"
+      image="https://static.vecteezy.com/system/resources/thumbnails/030/536/174/small/entrepreneur-asian-businessman-and-businesswoman-discussing-new-business-project-in-tablet-in-modern-meeting-in-modern-office-asian-business-casual-concept-photo.jpg"
     >
       {/* Hero Section */}
       <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 text-center relative overflow-hidden">

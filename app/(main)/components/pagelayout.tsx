@@ -39,9 +39,13 @@ export default function PageLayout({
           src={image}
           alt={title}
           fill
-          className="object-cover object-center"
           priority
+          quality={100} // 🔹 Makes image HD — no compression
+          sizes="100vw" // 🔹 Ensures full-screen image loads highest resolution
+          className="object-cover object-center"
+          unoptimized={true} // (Optional) Disables Next.js compression completely
         />
+
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Content */}

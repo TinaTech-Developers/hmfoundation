@@ -15,7 +15,8 @@ export default function AboutPage() {
     <PageLayout
       title="About Us"
       description="Discover the mission, vision, and story behind the Hiraya Manawari Foundation."
-      image="https://www.shutterstock.com/image-photo/teamwork-partnership-concept-hands-raised-600nw-2465435951.jpg"
+      image="https://edudelphi.in/wp-content/uploads/2021/03/1531409087.jpg"
+      // image="https://www.shutterstock.com/image-photo/teamwork-partnership-concept-hands-raised-600nw-2465435951.jpg"
       // ctaPrimary={{ label: "Explore Our Impact", href: "/projects" }}
       ctaSecondary={{ label: "Get Involved", href: "/donate" }}
     >
@@ -67,7 +68,7 @@ export default function AboutPage() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl shadow-green-600 h-64 sm:h-80 md:h-96">
               <Image
-                src="/hands-holding-each-other-support.jpg"
+                src="/Untitled-design-4-1.webp"
                 alt="Our Mission"
                 width={600}
                 height={400}
@@ -102,10 +103,11 @@ export default function AboutPage() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl shadow-green-600 h-64 sm:h-80 md:h-96">
               <Image
-                src="/environment.jpg"
+                src="/ngo2.jpg"
                 alt="Our Story"
                 width={600}
                 height={450}
+                quality={100}
                 className="object-cover h-full w-full"
               />
             </div>
@@ -147,7 +149,7 @@ export default function AboutPage() {
       </section>
 
       {/* Other Sections */}
-      <ImpactSection />
+      {/* <ImpactSection /> */}
       {/* <FeaturedShowcaseSection /> */}
       {/* <CommunityTestimonialsCarousel /> */}
       <CTASection />

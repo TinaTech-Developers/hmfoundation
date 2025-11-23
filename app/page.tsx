@@ -19,8 +19,8 @@ export default function Home() {
       <HeroSlider />
       <About />
       <ProgramsSection />
-      <FeaturedShowcaseSection />
-      {/* <ImpactSection /> */}
+      {/* <FeaturedShowcaseSection /> */}
+      <ImpactSection />
       {/* <StorySliderSection /> */}
       {/* <FeaturedProjectsSection /> */}
       {/* <FeaturedShowcaseSection /> */}

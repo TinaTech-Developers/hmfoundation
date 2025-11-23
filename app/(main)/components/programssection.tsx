@@ -8,6 +8,8 @@ import { FaChild } from "react-icons/fa";
 import { MdElderly } from "react-icons/md";
 import { CgCommunity } from "react-icons/cg";
 import { BsPeople } from "react-icons/bs";
+import Image from "next/image";
+import { image } from "framer-motion/client";
 
 const items = [
   {
@@ -15,18 +17,23 @@ const items = [
     blurb:
       "Empowering children to reach their full potential by providing quality education, mentorship, and essential learning resources.",
     icon: <FaChild className="w-7 h-7 text-green-600" />,
+    imageUrl: "https://dch.org.za/wp-content/uploads/2019/05/Untitled-20-2.jpg",
   },
   {
     title: "Elderly",
     blurb:
       "Supporting communities through volunteer initiatives, skills development, and care programs for the elderly and vulnerable.",
     icon: <MdElderly className="w-7 h-7 text-green-600" />,
+    imageUrl:
+      "/lifestyle-scene-from-community-showing-care-support-from-people.jpg",
   },
   {
     title: "Community",
     blurb:
       "Promoting sustainability through tree planting, community cleanups, and awareness campaigns for a healthier planet.",
     icon: <BsPeople className="w-7 h-7 text-green-600" />,
+    imageUrl:
+      "/group-happy-african-volunteers-planting-tree-park-africa-volunteering-charity-people-ecology-concept.jpg",
   },
 ];
 
@@ -55,31 +62,35 @@ export default function ProgramsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {items.map((item, i) => (
             <motion.div
-              key={i}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.15, duration: 0.7 }}
-              whileHover={{ y: -6 }}
-              className="bg-white flex flex-col items-center rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 text-center sm:text-left hover:shadow-lg hover:border-green-200 transition-all duration-300"
+              transition={{ delay: i * 0.15, duration: 0.6 }}
+              className="flex flex-col items-center justify-center relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl shadow-lime-600 transition-all duration-300"
             >
-              <div className="flex items-center justify-center sm:justify-start mb-5">
-                <div className="w-14 h-14 flex items-center justify-center bg-green-100 rounded-xl">
-                  {item.icon}
-                </div>
+              <div className="relative h-56 w-full">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
-                {item.title}
-              </h4>
-              {/* <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                {item.blurb}
-              </p> */}
+              <div className="p-6 text-left pb-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {item.title}
+                </h3>
+                {/* <p className="text-gray-700 text-sm">{project.description}</p> */}
+              </div>
               <Link
                 href={"/programs"}
-                className="flex items-center justify-center gap-2 text-sm text-green-600 hover:text-green-900"
+                className="flex my-10 items-center justify-center p-2 hover:bg-green-600 hover:text-white gap-2 text-sm text-green-600 border border-green-600 w-28"
               >
                 Read More
                 <ArrowRight size={15} />
               </Link>
+              {/* Centered Green Line (80% width) */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-2 bg-lime-600 "></div>
             </motion.div>
           ))}
         </div>

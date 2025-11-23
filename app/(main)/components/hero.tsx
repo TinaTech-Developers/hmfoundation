@@ -11,9 +11,10 @@ const slides = [
     subtitle:
       "We ensure every child has the best possible start in life by providing support, guidance, and opportunities that help them grow and reach their full potential.",
     image:
-      "https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg",
+      "https://m2m.org/wp-content/uploads/2021/06/084Mulanje-District-Abunu-Community-Play-Group.jpg",
     cta: "Support Children",
-    href: "/children",
+    href: "/donate",
+    //  https://eduspots.org/wp-content/uploads/2017/11/fullsizeoutput_b7-1600x1200.jpeg
   },
   {
     title: "Enhancing Lives: Elderly",
@@ -21,7 +22,7 @@ const slides = [
       "We provide comprehensive care and support for the elderly, ensuring their physical, emotional, and social needs are met with dignity and compassion.",
     image: "/rear-view-retired-couple-walking-sunset.jpg",
     cta: "Support Elderly Care",
-    href: "/elderly",
+    href: "/donate",
   },
   {
     title: "Reaching Communities: Projects",
@@ -29,7 +30,7 @@ const slides = [
       "We extend our impact through community-based projects that support vulnerable children and elderly individuals, ensuring they receive care, resources, and opportunities where they live.",
     image: "/environment.jpg",
     cta: "Explore Projects",
-    href: "/programs",
+    href: "/donate",
   },
 ];
 
@@ -78,7 +79,7 @@ export default function HeroSlider() {
               </p>
               <Link
                 href={slide.href}
-                className="inline-block px-8 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-full font-semibold shadow-md hover:from-green-700 hover:to-green-600 hover:scale-105 transition-all duration-300"
+                className="inline-block px-8 py-3 bg-linear-to-r from-green-600 to-green-500 text-white rounded-full font-semibold shadow-md hover:from-green-700 hover:to-green-600 hover:scale-105 transition-all duration-300"
               >
                 {slide.cta}
               </Link>
