@@ -167,7 +167,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Phone</p>
-                  <p className="text-gray-700">+263 77 123 4567</p>
+                  <p className="text-gray-700">+263 71 246 1873</p>
                 </div>
               </div>
 
@@ -177,9 +177,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Address</p>
-                  <p className="text-gray-700">
-                    123 Community Rd, Harare, Zimbabwe
-                  </p>
+                  <p className="text-gray-700">Harare, Zimbabwe</p>
                 </div>
               </div>
 
@@ -203,7 +201,7 @@ export default function ContactPage() {
                       LinkedIn
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/hiraya_manawari_foundation?igsh=MmhtdDNmM2lzYTY4"
                       className="text-lime-600 font-semibold hover:underline"
                     >
                       Instagram
