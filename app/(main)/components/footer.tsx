@@ -121,7 +121,7 @@ export default function ProfessionalFooter() {
             </form>
             <div className="flex space-x-4 mt-2">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1J4NBPTvve/"
                 className="text-gray-400 hover:text-lime-500 transition"
               >
                 <FaFacebookF />
@@ -133,13 +133,13 @@ export default function ProfessionalFooter() {
                 <MailIcon size={18} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/hiraya_manawari_foundation?igsh=MmhtdDNmM2lzYTY4"
                 className="text-gray-400 hover:text-lime-500 transition"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/hiraya-manawari-foundation/"
                 className="text-gray-400 hover:text-lime-500 transition"
               >
                 <FaLinkedinIn />
