@@ -46,7 +46,7 @@ export default function ProgramsPage() {
     >
       {/* — supporting children’s education, caring for the elderly, and fostering
       strong, empowered communities. */}
-      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-lime-50 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Eriazeri Muguti",
-    role: "Community Volunteer",
+    role: "",
     quote:
       "It continuously gives us good information about what needs to be done and what is done. Hiraya Manawari Foundation makes a very big difference in many positive ways to the children’s lives and gives them hope for the future. It is so worthwhile supporting these children and their communities through Hiraya Manawari Foundation.",
     photoUrl:
@@ -26,7 +26,7 @@ const testimonials: Testimonial[] = [
   {
     id: 2,
     name: "Nyasha Muronzi",
-    role: "Community Volunteer",
+    role: "Communi",
     quote:
       "It has been great being part of the intiative which is dedicated to serve and save lifes at the same time. Hiraya Manawari is a true testament of giving back to community.",
     photoUrl:

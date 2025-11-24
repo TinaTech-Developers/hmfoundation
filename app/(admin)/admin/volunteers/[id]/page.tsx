@@ -95,7 +95,7 @@ export default function ViewVolunteerPage() {
           <p className="text-red-600">Volunteer not found.</p>
           <button
             onClick={() => router.back()}
-            className="mt-4 text-green-700 hover:underline flex items-center gap-2"
+            className="mt-4 text-lime-700 hover:underline flex items-center gap-2"
           >
             <ArrowLeft className="w-5 h-5" /> Back
           </button>
@@ -110,7 +110,7 @@ export default function ViewVolunteerPage() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-2 text-green-700 hover:underline"
+          className="flex items-center gap-2 text-lime-700 hover:underline"
         >
           <ArrowLeft className="w-5 h-5" /> Back to Volunteers
         </button>
@@ -122,7 +122,7 @@ export default function ViewVolunteerPage() {
           transition={{ duration: 0.4 }}
           className="bg-white rounded-2xl shadow p-6"
         >
-          <h1 className="text-2xl font-bold text-green-700 mb-2">
+          <h1 className="text-2xl font-bold text-lime-700 mb-2">
             {volunteer.name}
           </h1>
           <p className="text-gray-700 mb-1">
@@ -148,7 +148,7 @@ export default function ViewVolunteerPage() {
         <div className="flex gap-3">
           <button
             onClick={() => setIsEditing(true)}
-            className="px-5 py-2 bg-green-600 hover:bg-green-700 text-white rounded-xl transition shadow"
+            className="px-5 py-2 bg-lime-600 hover:bg-lime-700 text-white rounded-xl transition shadow"
           >
             Edit Volunteer
           </button>
@@ -175,7 +175,7 @@ export default function ViewVolunteerPage() {
                 exit={{ scale: 0.8 }}
                 className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
               >
-                <h3 className="text-xl font-bold text-green-700 mb-4">
+                <h3 className="text-xl font-bold text-lime-700 mb-4">
                   Edit Volunteer
                 </h3>
                 <form
@@ -196,26 +196,26 @@ export default function ViewVolunteerPage() {
                     type="text"
                     name="name"
                     defaultValue={volunteer.name}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                     required
                   />
                   <input
                     type="email"
                     name="email"
                     defaultValue={volunteer.email}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                     required
                   />
                   <input
                     type="text"
                     name="phone"
                     defaultValue={volunteer.phone || ""}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <select
                     name="type"
                     defaultValue={volunteer.type}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   >
                     <option value="children">Children Support</option>
                     <option value="elderly">Elderly Care</option>
@@ -225,7 +225,7 @@ export default function ViewVolunteerPage() {
                     name="message"
                     defaultValue={volunteer.message}
                     rows={3}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <div className="flex justify-end gap-2 mt-2">
                     <button
@@ -237,7 +237,7 @@ export default function ViewVolunteerPage() {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+                      className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700"
                     >
                       Save
                     </button>

@@ -97,7 +97,7 @@ export default function ProfessionalFooter() {
                   +263 71 246 1873
                 </a>
               </li>
-              <li>Address: Harare, Zimbabwe</li>
+              {/* <li>Address: Harare, Zimbabwe</li> */}
             </ul>
           </div>
 

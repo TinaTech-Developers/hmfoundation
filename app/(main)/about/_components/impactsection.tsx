@@ -54,7 +54,7 @@ export default function ImpactSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="flex flex-col items-center bg-green-50 rounded-2xl p-8 hover:shadow-md hover:bg-green-100 transition-all duration-300"
+                className="flex flex-col items-center bg-lime-50 rounded-2xl p-8 hover:shadow-md hover:bg-lime-100 transition-all duration-300"
               >
                 <div className="mb-4 bg-white shadow-sm p-3 rounded-xl">
                   <Icon className="w-8 h-8 text-lime-600" />

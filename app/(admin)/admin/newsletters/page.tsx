@@ -89,42 +89,42 @@ export default function AdminNewslettersPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-green-700"
+          className="text-3xl font-bold text-lime-700"
         >
           News Articles
         </motion.h2>
 
         <button
           onClick={() => openModal()}
-          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+          className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
         >
           Add Article
         </button>
 
         <div className="overflow-x-auto rounded-lg shadow-md bg-white">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-green-100">
+            <thead className="bg-lime-100">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   #
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Title
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Category
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Date
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Actions
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {articles.map((article, i) => (
-                <tr key={article._id} className="hover:bg-green-50 transition">
+                <tr key={article._id} className="hover:bg-lime-50 transition">
                   <td className="px-6 py-4">{i + 1}</td>
                   <td className="px-6 py-4">{article.title}</td>
                   <td className="px-6 py-4">{article.category}</td>
@@ -134,7 +134,7 @@ export default function AdminNewslettersPage() {
                   <td className="px-6 py-4 flex gap-2">
                     <Link
                       href={`/admin/newsletters/${article._id}`}
-                      className="px-2 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm"
+                      className="px-2 py-1 bg-lime-600 text-white rounded hover:bg-lime-700 transition text-sm"
                     >
                       View / Edit
                     </Link>
@@ -168,7 +168,7 @@ export default function AdminNewslettersPage() {
               exit={{ scale: 0.8 }}
               className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
             >
-              <h3 className="text-xl font-bold text-green-700 mb-4">
+              <h3 className="text-xl font-bold text-lime-700 mb-4">
                 {currentArticle ? "Edit Article" : "Add Article"}
               </h3>
 
@@ -194,7 +194,7 @@ export default function AdminNewslettersPage() {
                   defaultValue={currentArticle?.title || ""}
                   placeholder="Title"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
                 <input
                   type="text"
@@ -202,14 +202,14 @@ export default function AdminNewslettersPage() {
                   defaultValue={currentArticle?.excerpt || ""}
                   placeholder="Excerpt"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
                 <textarea
                   name="content"
                   defaultValue={currentArticle?.content || ""}
                   placeholder="Content"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
                 <input
                   type="text"
@@ -217,7 +217,7 @@ export default function AdminNewslettersPage() {
                   defaultValue={currentArticle?.image || ""}
                   placeholder="Image URL"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
                 <input
                   type="text"
@@ -225,7 +225,7 @@ export default function AdminNewslettersPage() {
                   defaultValue={currentArticle?.category || ""}
                   placeholder="Category"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
                 <input
                   type="date"
@@ -237,7 +237,7 @@ export default function AdminNewslettersPage() {
                           .split("T")[0]
                       : ""
                   }
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
 
                 <div className="flex justify-end gap-2 mt-4">
@@ -250,7 +250,7 @@ export default function AdminNewslettersPage() {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+                    className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
                   >
                     Save
                   </button>

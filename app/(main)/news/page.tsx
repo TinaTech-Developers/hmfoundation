@@ -55,7 +55,7 @@ export default function NewsPage() {
       image="https://static.vecteezy.com/system/resources/thumbnails/030/536/174/small/entrepreneur-asian-businessman-and-businesswoman-discussing-new-business-project-in-tablet-in-modern-meeting-in-modern-office-asian-business-casual-concept-photo.jpg"
     >
       {/* Hero Section */}
-      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 text-center relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-lime-50 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-light.svg')] opacity-10"></div>
         <div className="relative max-w-4xl mx-auto px-6">
           <motion.h1
@@ -101,7 +101,7 @@ export default function NewsPage() {
                       />
                     </div>
                     <div className="p-8">
-                      <span className="text-green-700 text-sm font-semibold">
+                      <span className="text-lime-700 text-sm font-semibold">
                         {filteredArticles[0].category.toUpperCase()}
                       </span>
                       <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
@@ -139,7 +139,7 @@ export default function NewsPage() {
                         />
                       </div>
                       <div className="p-6 pb-10">
-                        <p className="text-sm text-green-700 font-semibold mb-2">
+                        <p className="text-sm text-lime-700 font-semibold mb-2">
                           {article.category}
                         </p>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">

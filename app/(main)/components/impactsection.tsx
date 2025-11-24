@@ -41,7 +41,7 @@ export default function ImpactSection() {
         </motion.h3>
 
         <p className="text-gray-600 mb-12 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          Every program we run contributes to meaningful change
+          Every program we run contributes to a meaningful change
           {/* — empowering communities, restoring environments, and shaping brighter futures. */}
         </p>
 
@@ -54,7 +54,7 @@ export default function ImpactSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="flex flex-col items-center bg-green-50 rounded-2xl p-8 hover:shadow-md hover:bg-green-100 transition-all duration-300"
+                className="flex flex-col items-center bg-lime-50 rounded-2xl p-8 hover:shadow-md hover:bg-lime-100 transition-all duration-300"
               >
                 <div className="mb-4 bg-white shadow-sm p-3 rounded-xl">
                   <Icon className="w-8 h-8 text-lime-600" />

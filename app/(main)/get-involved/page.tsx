@@ -13,10 +13,10 @@ export default function GetInvolvedPage() {
       description="Join us in making a difference. Explore volunteering, donations, partnerships, and events to support children, the elderly, and communities across Zimbabwe."
       image="/close-up-women-holding-each-other.jpg"
       ctaPrimary={{ label: "Volunteer Today", href: "/volunteer" }}
-      ctaSecondary={{ label: "Donate Now", href: "/donate" }}
+      ctaSecondary={{ label: "Donate", href: "/donate" }}
     >
       {/* Hero Section */}
-      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-green-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white via-gray-50 to-lime-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-light.svg')] opacity-10"></div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <motion.h2
@@ -42,10 +42,10 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Modern Get Involved Section */}
-      <section className="relative py-28 bg-linear-to-b from-white via-green-50 to-green-100 overflow-hidden">
+      <section className="relative py-28 bg-linear-to-b from-white via-lime-50 to-lime-100 overflow-hidden">
         {/* Background Shapes */}
         <div className="absolute top-0 left-1/3 w-[700px] h-[700px] bg-lime-100 rounded-full opacity-30 -z-10"></div>
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-green-200 rounded-full opacity-20 -z-10"></div>
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-lime-200 rounded-full opacity-20 -z-10"></div>
 
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
@@ -105,7 +105,7 @@ export default function GetInvolvedPage() {
       <FAQSection />
 
       {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-green-700 to-green-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-lime-700 to-lime-900 text-white relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -127,9 +127,9 @@ export default function GetInvolvedPage() {
             </a>
             <a
               href="/donate"
-              className="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-green-800 transition"
+              className="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-lime-800 transition"
             >
-              Donate Now
+              Donate
             </a>
           </div>
         </div>
@@ -218,8 +218,9 @@ const getInvolvedOptions = [
     title: "Partner",
     description:
       "Collaborate with us as an organization, school, or business to expand our reach.",
-    image: "https://www.gjournals.org/wp-content/uploads/2022/05/Clip77.png",
-    link: "/volunter",
+    image:
+      "https://www.shutterstock.com/image-photo/close-two-business-people-shaking-600nw-2172227403.jpg",
+    link: "/volunteer",
   },
   // {
   //   title: "Events",

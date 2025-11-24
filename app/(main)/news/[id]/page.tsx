@@ -92,7 +92,7 @@ export default function NewsArticlePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-green-700 font-semibold text-sm uppercase">
+          <span className="text-lime-700 font-semibold text-sm uppercase">
             {article.category}
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2 mb-4">
@@ -133,7 +133,7 @@ export default function NewsArticlePage() {
         </motion.div>
       </article>
 
-      <PartnerSpotlightSection />
+      {/* <PartnerSpotlightSection /> */}
     </PageLayout>
   );
 }

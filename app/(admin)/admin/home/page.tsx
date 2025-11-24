@@ -27,25 +27,25 @@ export default function DashboardHome() {
       id: 1,
       label: "Total Donations",
       value: 0,
-      icon: <FiGift className="text-green-600" />,
+      icon: <FiGift className="text-lime-600" />,
     },
     {
       id: 2,
       label: "Items Donated",
       value: 0,
-      icon: <FiActivity className="text-green-600" />,
+      icon: <FiActivity className="text-lime-600" />,
     },
     {
       id: 3,
       label: "Active Programs",
       value: 0,
-      icon: <FiCheckCircle className="text-green-600" />,
+      icon: <FiCheckCircle className="text-lime-600" />,
     },
     {
       id: 4,
       label: "Beneficiaries",
       value: 0,
-      icon: <FiUsers className="text-green-600" />,
+      icon: <FiUsers className="text-lime-600" />,
     },
   ]);
 
@@ -87,25 +87,25 @@ export default function DashboardHome() {
             id: 1,
             label: "Total Donations",
             value: `$${totalDonations}`,
-            icon: <FiGift className="text-green-600" />,
+            icon: <FiGift className="text-lime-600" />,
           },
           {
             id: 2,
             label: "Items Donated",
             value: itemsDonated,
-            icon: <FiActivity className="text-green-600" />,
+            icon: <FiActivity className="text-lime-600" />,
           },
           {
             id: 3,
             label: "Active Programs",
             value: activePrograms,
-            icon: <FiCheckCircle className="text-green-600" />,
+            icon: <FiCheckCircle className="text-lime-600" />,
           },
           {
             id: 4,
             label: "Beneficiaries",
             value: beneficiaries,
-            icon: <FiUsers className="text-green-600" />,
+            icon: <FiUsers className="text-lime-600" />,
           },
         ]);
 
@@ -137,7 +137,7 @@ export default function DashboardHome() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <div className="flex items-center gap-4 mb-2">
-              <div className="p-3 bg-green-100 rounded-full">{stat.icon}</div>
+              <div className="p-3 bg-lime-100 rounded-full">{stat.icon}</div>
               <span className="text-gray-700 font-medium">{stat.label}</span>
             </div>
             <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
@@ -184,13 +184,13 @@ export default function DashboardHome() {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div className="bg-green-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-green-700 transition">
+        <div className="bg-lime-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-lime-700 transition">
           Add Donation
         </div>
-        <div className="bg-green-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-green-700 transition">
+        <div className="bg-lime-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-lime-700 transition">
           Add Program
         </div>
-        <div className="bg-green-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-green-700 transition">
+        <div className="bg-lime-600 text-white p-6 rounded-2xl cursor-pointer hover:bg-lime-700 transition">
           Export Data
         </div>
       </div>

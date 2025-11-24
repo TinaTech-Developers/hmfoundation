@@ -83,7 +83,7 @@ export default function FeaturedShowcaseSection() {
                 </h3>
                 {/* <p className="text-gray-700 text-sm">{project.description}</p> */}
               </div>
-              {/* Centered Green Line (80% width) */}
+              {/* Centered lime Line (80% width) */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-2 bg-lime-600 "></div>
             </motion.div>
           ))}

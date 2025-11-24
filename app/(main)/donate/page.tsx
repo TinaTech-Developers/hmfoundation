@@ -80,7 +80,7 @@ export default function DonatePage() {
   return (
     <PageLayout
       title="Support Our Cause"
-      description="Make a difference today by donating to our organization. Your support helps us provide education, clean water, and empowerment to those in need."
+      description="Make a difference today."
       image="https://cloudfront-us-east-1.images.arcpublishing.com/pmn/D2LTRFIHZZEXTAJ55QIZBWGJEU.jpg"
       ctaPrimary={{ label: "Donate Now", href: "#donate-section" }}
     >
@@ -258,9 +258,9 @@ export default function DonatePage() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-gray-700 max-w-2xl mx-auto"
           >
-            Every contribution helps children attend school, communities gain
+            {/* Every contribution helps children attend school, communities gain
             access to clean water, and women achieve independence. Together, we
-            can change lives.
+            can change lives. */}
           </motion.p>
         </section>
       </div>

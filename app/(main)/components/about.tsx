@@ -21,14 +21,14 @@ export default function About() {
             alt="About Hirayama Nawa Foundation"
             width={600}
             height={400}
-            className="rounded-2xl shadow-2xl shadow-green-900 object-cover my-6 md:my-12"
+            className="rounded-2xl shadow-2xl shadow-lime-900 object-cover my-6 md:my-12"
           />
           <Image
             src="/childdev.jpg"
             alt="About Hirayama Nawa Foundation"
             width={600}
             height={400}
-            className="rounded-2xl shadow-2xl shadow-green-900 object-cover my-6 md:my-10"
+            className="rounded-2xl shadow-2xl shadow-lime-900 object-cover my-6 md:my-10"
           />
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-green-700 mb-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-lime-700 mb-5">
             Empowering Lives, Building Futures
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
@@ -75,7 +75,7 @@ export default function About() {
 
           <Link
             href="/about"
-            className="inline-block mt-10 px-8 py-3 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition-all"
+            className="inline-block mt-10 px-8 py-3 bg-lime-600 text-white rounded-full font-semibold hover:bg-lime-700 transition-all"
           >
             Learn More
           </Link>

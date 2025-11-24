@@ -31,7 +31,7 @@ export default function ContactPage() {
       ctaSecondary={{ label: "Donate ", href: "/donate" }}
     >
       {/* Hero Section */}
-      <section className="relative py-24 bg-linear-to-b from-green-50 via-white to-white text-center overflow-hidden">
+      <section className="relative py-24 bg-linear-to-b from-lime-50 via-white to-white text-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -171,7 +171,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-center bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+              {/* <div className="flex items-center bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
                 <div className="bg-lime-600 w-12 h-12 rounded-full flex items-center justify-center text-white text-xl mr-4">
                   📍
                 </div>
@@ -179,7 +179,7 @@ export default function ContactPage() {
                   <p className="font-semibold text-gray-900">Address</p>
                   <p className="text-gray-700">Harare, Zimbabwe</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
                 <div className="bg-lime-600 w-12 h-12 rounded-full flex items-center justify-center text-white text-xl mr-4">
@@ -215,7 +215,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className=" bg-linear-to-r from-green-800 to-lime-600  py-20">
+      <section className=" bg-linear-to-r from-lime-800 to-lime-600  py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-xl  overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.789847!2d31.045984!3d-17.825827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1934b0f5c7ed2f1b%3A0x123456789abcdef0!2sHarare%2C%20Zimbabwe!5e0!3m2!1sen!2s!4v1699012345678!5m2!1sen!2s"
@@ -228,7 +228,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-700 text-white text-center">
+      <section className="py-20 bg-lime-700 text-white text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -250,7 +250,7 @@ export default function ContactPage() {
           </a>
           <a
             href="/donate"
-            className="bg-transparent border border-white mx-4 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-green-800 transition"
+            className="bg-transparent border border-white mx-4 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-lime-800 transition"
           >
             Donate
           </a>

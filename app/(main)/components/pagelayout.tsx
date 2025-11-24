@@ -85,8 +85,8 @@ export default function PageLayout({
                 <a
                   href={ctaPrimary.href}
                   aria-label={ctaPrimary.ariaLabel ?? ctaPrimary.label}
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold shadow-lg transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500
-                    bg-green-600 hover:bg-green-700 text-white text-sm sm:text-base"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold shadow-lg transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500
+                    bg-lime-600 hover:bg-lime-700 text-white text-sm sm:text-base"
                 >
                   {ctaPrimary.label}
                 </a>

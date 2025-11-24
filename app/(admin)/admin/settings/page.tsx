@@ -107,8 +107,8 @@ export default function AdminSettingsPage() {
           className="flex items-center justify-between"
         >
           <div>
-            <h2 className="text-3xl font-bold text-green-700 flex items-center gap-2">
-              <SettingsIcon className="text-green-600" size={28} />
+            <h2 className="text-3xl font-bold text-lime-700 flex items-center gap-2">
+              <SettingsIcon className="text-lime-600" size={28} />
               Settings
             </h2>
             <p className="text-gray-600 mt-1">
@@ -126,7 +126,7 @@ export default function AdminSettingsPage() {
 
           {/* Admin Settings */}
           <section>
-            <h3 className="text-xl font-semibold text-green-700 mb-4 border-b pb-2">
+            <h3 className="text-xl font-semibold text-lime-700 mb-4 border-b pb-2">
               Admin Account
             </h3>
 
@@ -140,7 +140,7 @@ export default function AdminSettingsPage() {
                   name="adminName"
                   value={formData.adminName}
                   onChange={handleChange}
-                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   required
                 />
               </div>
@@ -154,7 +154,7 @@ export default function AdminSettingsPage() {
                   name="adminEmail"
                   value={formData.adminEmail}
                   onChange={handleChange}
-                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   required
                 />
               </div>
@@ -169,7 +169,7 @@ export default function AdminSettingsPage() {
                   value={formData.password}
                   onChange={handleChange}
                   placeholder="Enter new password"
-                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                  className="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                 />
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function AdminSettingsPage() {
           <div className="flex justify-end pt-4 border-t">
             <button
               type="submit"
-              className="flex items-center gap-2 px-5 py-2 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition"
+              className="flex items-center gap-2 px-5 py-2 bg-lime-600 text-white font-semibold rounded-lg shadow-md hover:bg-lime-700 transition"
             >
               <Save size={18} /> Save Changes
             </button>

@@ -45,7 +45,7 @@ export default function ViewArticlePage() {
         <p className="text-red-600">Article not found.</p>
         <button
           onClick={() => router.back()}
-          className="mt-4 text-green-700 hover:underline"
+          className="mt-4 text-lime-700 hover:underline"
         >
           <ArrowLeft className="inline w-5 h-5 mr-1" /> Back
         </button>
@@ -75,7 +75,7 @@ export default function ViewArticlePage() {
       <div className="max-w-5xl mx-auto p-6 space-y-6">
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-2 text-green-700 hover:underline"
+          className="flex items-center gap-2 text-lime-700 hover:underline"
         >
           <ArrowLeft className="w-5 h-5" /> Back to Articles
         </button>
@@ -84,7 +84,7 @@ export default function ViewArticlePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-linear-to-r from-green-600 to-lime-500 text-white rounded-2xl p-6 shadow-lg"
+          className="bg-linear-to-r from-lime-600 to-lime-500 text-white rounded-2xl p-6 shadow-lg"
         >
           <h1 className="text-2xl font-bold">{article.title}</h1>
           <p className="mt-1 text-sm opacity-80">{article.excerpt}</p>
@@ -122,7 +122,7 @@ export default function ViewArticlePage() {
         >
           <button
             onClick={openModal}
-            className="px-5 py-2 bg-green-600 hover:bg-green-700 text-white rounded-xl transition shadow"
+            className="px-5 py-2 bg-lime-600 hover:bg-lime-700 text-white rounded-xl transition shadow"
           >
             Edit Article
           </button>
@@ -142,7 +142,7 @@ export default function ViewArticlePage() {
                 exit={{ scale: 0.8 }}
                 className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
               >
-                <h3 className="text-xl font-bold text-green-700 mb-4">
+                <h3 className="text-xl font-bold text-lime-700 mb-4">
                   Edit Article
                 </h3>
 
@@ -167,7 +167,7 @@ export default function ViewArticlePage() {
                     defaultValue={article.title}
                     placeholder="Title"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <input
                     type="text"
@@ -175,14 +175,14 @@ export default function ViewArticlePage() {
                     defaultValue={article.excerpt}
                     placeholder="Excerpt"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <textarea
                     name="content"
                     defaultValue={article.content}
                     placeholder="Content"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <input
                     type="text"
@@ -190,7 +190,7 @@ export default function ViewArticlePage() {
                     defaultValue={article.image}
                     placeholder="Image URL"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <input
                     type="text"
@@ -198,7 +198,7 @@ export default function ViewArticlePage() {
                     defaultValue={article.category}
                     placeholder="Category"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
                   <input
                     type="date"
@@ -206,7 +206,7 @@ export default function ViewArticlePage() {
                     defaultValue={
                       new Date(article.date).toISOString().split("T")[0]
                     }
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
                   />
 
                   <div className="flex justify-end gap-2 mt-4">
@@ -219,7 +219,7 @@ export default function ViewArticlePage() {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+                      className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
                     >
                       Save
                     </button>

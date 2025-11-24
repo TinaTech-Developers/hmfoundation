@@ -67,7 +67,7 @@ export default function AdminVolunteersPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-green-700"
+          className="text-3xl font-bold text-lime-700"
         >
           Volunteer Requests
         </motion.h2>
@@ -75,31 +75,31 @@ export default function AdminVolunteersPage() {
 
         <div className="overflow-x-auto rounded-lg shadow-md bg-white">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-green-100">
+            <thead className="bg-lime-100">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   #
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Name
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Email
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Phone
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Type
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-green-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-lime-800">
                   Actions
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {volunteers.map((v, index) => (
-                <tr key={v._id} className="hover:bg-green-50 transition">
+                <tr key={v._id} className="hover:bg-lime-50 transition">
                   <td className="px-6 py-4">{index + 1}</td>
                   <td className="px-6 py-4">{v.name}</td>
                   <td className="px-6 py-4">{v.email}</td>
@@ -108,7 +108,7 @@ export default function AdminVolunteersPage() {
                   <td className="px-6 py-4 flex gap-2">
                     <Link
                       href={`/admin/volunteers/${v._id}`}
-                      className="px-2 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm"
+                      className="px-2 py-1 bg-lime-600 text-white rounded hover:bg-lime-700 transition text-sm"
                     >
                       View / Edit
                     </Link>

@@ -47,7 +47,7 @@ export default function VolunteerPage() {
 
   return (
     <PageLayout
-      title="Get Involved – Volunteer"
+      title=" Volunteer"
       description="Make a difference by volunteering with the Hiraya Manawari Foundation. Help children, support the elderly, or contribute to community initiatives."
       image="/close-up-women-holding-each-other.jpg"
       ctaPrimary={{ label: "Volunteer Now", href: "#volunteer-section" }}
