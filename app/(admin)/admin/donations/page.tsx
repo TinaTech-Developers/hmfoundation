@@ -65,7 +65,7 @@ export default function AdminDonationsPage() {
 
         <div className="flex flex-wrap gap-4">
           <button
-            className="px-4 py-2 bg-[#A7CE44]-600 text-white rounded-lg hover:bg-[#A7CE44]-700 transition"
+            className="px-4 py-2 bg-[#A7CE44] text-white rounded-lg hover:bg-[#b4fc00] transition"
             onClick={() => router.push("/admin/donations/new")}
           >
             Add Donation
@@ -74,34 +74,31 @@ export default function AdminDonationsPage() {
 
         <div className="overflow-x-auto rounded-lg shadow-md bg-white">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-[#A7CE44]-100">
+            <thead className="bg-lime-100">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   #
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   Donor
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   Type
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   Amount / Item
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   Date
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-[#A7CE44]-800">
+                <th className="px-6 py-3 text-left text-sm font-medium text-[#9bce1c]">
                   Actions
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {donations.map((donation, index) => (
-                <tr
-                  key={donation._id}
-                  className="hover:bg-[#A7CE44]-50 transition"
-                >
+                <tr key={donation._id} className="hover:bg-lime-50 transition">
                   <td className="px-6 py-4">{index + 1}</td>
                   <td className="px-6 py-4">{donation.name}</td>
                   <td className="px-6 py-4">{donation.type}</td>
@@ -118,7 +115,7 @@ export default function AdminDonationsPage() {
                       onClick={() =>
                         router.push(`/admin/donations/${donation._id}`)
                       }
-                      className="px-2 py-1 bg-[#A7CE44]-600 text-white rounded hover:bg-[#A7CE44]-700 transition text-sm"
+                      className="px-2 py-1 bg-[#A7CE44] text-white rounded hover:bg-[#9bce1c] transition text-sm"
                     >
                       View / Edit
                     </button>

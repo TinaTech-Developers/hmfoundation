@@ -175,7 +175,7 @@ export default function VolunteerPage() {
               <p className="text-gray-900 mb-4">{modalMessage}</p>
               <button
                 onClick={() => setModalOpen(false)}
-                className="px-6 py-2 bg-[#A7CE44]-600 text-white rounded-full hover:bg-[#A7CE44]-700 transition"
+                className="px-6 py-2 bg-[#A7CE44] text-white rounded-full hover:bg-[#9bce1c] transition"
               >
                 Close
               </button>

@@ -96,7 +96,7 @@ export default function ViewDonationPage() {
         <p className="text-red-600">Donation not found.</p>
         <button
           onClick={() => router.back()}
-          className="mt-4 text-[#A7CE44]-700 hover:underline"
+          className="mt-4 text-[#9bce1c] hover:underline"
         >
           <ArrowLeft className="inline w-5 h-5 mr-1" /> Back
         </button>
@@ -110,7 +110,7 @@ export default function ViewDonationPage() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-2 text-[#A7CE44]-700 hover:underline"
+          className="flex items-center gap-2 text-[#9bce1c] hover:underline"
         >
           <ArrowLeft className="w-5 h-5" /> Back to Donations
         </button>
@@ -120,7 +120,7 @@ export default function ViewDonationPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-gradient-to-r from-[#A7CE44]-600 to-[#A7CE44]-500 text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
+          className="bg-linear-to-r from-[#9bce1c] to-[#b7ff00] text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
         >
           <div>
             <h1 className="text-2xl font-bold">
@@ -176,7 +176,7 @@ export default function ViewDonationPage() {
               setEditableDonation(donation);
               setIsEditing(true);
             }}
-            className="px-5 py-2 bg-[#A7CE44]-600 hover:bg-[#A7CE44]-700 text-white rounded-xl transition shadow"
+            className="px-5 py-2 bg-[#A7CE44] hover:bg-[#9bce1c] text-white rounded-xl transition shadow"
           >
             Edit Donation
           </button>
