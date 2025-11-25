@@ -154,7 +154,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text:sm md:text-base">
                     info@hirayamanawarifoundation.com <br />
                     hirayamanawari.foundation@gmail.com
                   </p>
