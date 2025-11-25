@@ -26,7 +26,7 @@ export default function ImpactSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm  font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block"
+          className="text-sm  font-semibold text-[#A7CE44] uppercase mb-2 inline-block"
         >
           Our Impact
         </motion.span>
