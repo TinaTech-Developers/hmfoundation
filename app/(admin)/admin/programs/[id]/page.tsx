@@ -26,7 +26,7 @@ export default function ViewProgramPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const statusColors: Record<string, string> = {
-    Active: "bg-lime-100 text-lime-800",
+    Active: "bg-[#A7CE44]-100 text-[#A7CE44]-800",
     Inactive: "bg-yellow-100 text-yellow-800",
   };
 
@@ -91,7 +91,7 @@ export default function ViewProgramPage() {
           <p className="text-red-600">Program not found.</p>
           <button
             onClick={() => router.back()}
-            className="mt-4 text-lime-700 hover:underline"
+            className="mt-4 text-[#A7CE44]-700 hover:underline"
           >
             <ArrowLeft className="inline w-5 h-5 mr-1" /> Back
           </button>
@@ -106,7 +106,7 @@ export default function ViewProgramPage() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-2 text-lime-700 hover:underline"
+          className="flex items-center gap-2 text-[#A7CE44]-700 hover:underline"
         >
           <ArrowLeft className="w-5 h-5" /> Back to Programs
         </button>
@@ -116,7 +116,7 @@ export default function ViewProgramPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-linear-to-r from-lime-600 to-lime-500 text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
+          className="bg-linear-to-r from-[#A7CE44]-600 to-[#A7CE44]-500 text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
         >
           <div>
             <h1 className="text-2xl font-bold">{program.title}</h1>
@@ -179,7 +179,7 @@ export default function ViewProgramPage() {
         >
           <button
             onClick={openModal}
-            className="px-5 py-2 bg-lime-600 hover:bg-lime-700 text-white rounded-xl transition shadow"
+            className="px-5 py-2 bg-[#A7CE44]-600 hover:bg-[#A7CE44]-700 text-white rounded-xl transition shadow"
           >
             Edit Program
           </button>
@@ -200,7 +200,7 @@ export default function ViewProgramPage() {
                 exit={{ scale: 0.8 }}
                 className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
               >
-                <h3 className="text-xl font-bold text-lime-700 mb-4">
+                <h3 className="text-xl font-bold text-[#A7CE44]-700 mb-4">
                   Edit Program
                 </h3>
 
@@ -224,7 +224,7 @@ export default function ViewProgramPage() {
                     defaultValue={program.title}
                     placeholder="Program Title"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
 
                   <textarea
@@ -232,7 +232,7 @@ export default function ViewProgramPage() {
                     defaultValue={program.content}
                     placeholder="Program Content"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
 
                   <textarea
@@ -240,7 +240,7 @@ export default function ViewProgramPage() {
                     defaultValue={program.description}
                     placeholder="Program Description"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <input
                     type="date"
@@ -249,19 +249,19 @@ export default function ViewProgramPage() {
                       new Date(program.date).toISOString().split("T")[0]
                     }
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <input
                     type="text"
                     name="image"
                     defaultValue={program.image}
                     placeholder="Image URL"
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <select
                     name="status"
                     defaultValue={program.status}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   >
                     <option value="Active">Active</option>
                     <option value="Inactive">Inactive</option>
@@ -277,7 +277,7 @@ export default function ViewProgramPage() {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
+                      className="px-4 py-2 bg-[#A7CE44]-600 text-white rounded-lg hover:bg-[#A7CE44]-700 transition"
                     >
                       Save
                     </button>

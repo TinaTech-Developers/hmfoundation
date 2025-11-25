@@ -50,7 +50,7 @@ export default function AboutPage() {
                 "Provide comprehensive care and support for the elderly, ensuring their physical, emotional, and social needs are met.",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="shrink-0 w-6 h-6 bg-lime-600 text-white flex items-center justify-center rounded-full text-sm font-bold">
+                  <span className="shrink-0 w-6 h-6 bg-[#A7CE44] text-white flex items-center justify-center rounded-full text-sm font-bold">
                     {i + 1}
                   </span>
                   <p className="text-gray-700 text-sm sm:text-base">{text}</p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative order-first md:order-last"
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-lime-600 h-64 sm:h-80 md:h-96">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-[#A7CE44] h-64 sm:h-80 md:h-96">
               <Image
                 src="/Untitled-design-4-1.webp"
                 alt="Our Mission"
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2  sm:-bottom-6 sm:left-32 bg-lime-600 text-white px-4 sm:px-6 py-3 rounded-xl shadow-lg text-center sm:text-left w-[80%] sm:w-auto">
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2  sm:-bottom-6 sm:left-32 bg-[#A7CE44] text-white px-4 sm:px-6 py-3 rounded-xl shadow-lg text-center sm:text-left w-[80%] sm:w-auto">
               {/* <p className="font-semibold text-base sm:text-lg">
                 Driven by Purpose
               </p> */}
@@ -101,7 +101,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-lime-600 h-64 sm:h-80 md:h-96">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-[#A7CE44] h-64 sm:h-80 md:h-96">
               <Image
                 src="/ngo2.jpg"
                 alt="Our Story"
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 className="object-cover h-full w-full"
               />
             </div>
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:-left-4 sm:translate-x-0 bg-lime-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg text-xs sm:text-sm font-medium whitespace-nowrap">
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:-left-4 sm:translate-x-0 bg-[#A7CE44] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg text-xs sm:text-sm font-medium whitespace-nowrap">
               Est. 2017
             </div>
           </motion.div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-gray-700  leading-relaxed mb-6">
               Founded on 24 July 2017, the{" "}
-              <span className="font-semibold text-lime-700">
+              <span className="font-semibold text-[#92c01e]">
                 Hiraya Manawari Foundation
               </span>
               {
@@ -140,7 +140,7 @@ export default function AboutPage() {
               life and that the elderly are cared for with dignity, love, and
               respect. */}
             </p>
-            <div className="border-l-4 border-lime-600 pl-4 italic text-gray-600 text-sm sm:text-base">
+            <div className="border-l-4 border-[#A7CE44]-600 pl-4 italic text-gray-600 text-sm sm:text-base">
               “Every step we take is a story of hope and transformation.”
             </div>
           </motion.div>

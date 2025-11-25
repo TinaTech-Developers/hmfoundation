@@ -96,7 +96,7 @@ export default function ViewDonationPage() {
         <p className="text-red-600">Donation not found.</p>
         <button
           onClick={() => router.back()}
-          className="mt-4 text-lime-700 hover:underline"
+          className="mt-4 text-[#A7CE44]-700 hover:underline"
         >
           <ArrowLeft className="inline w-5 h-5 mr-1" /> Back
         </button>
@@ -110,7 +110,7 @@ export default function ViewDonationPage() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-2 text-lime-700 hover:underline"
+          className="flex items-center gap-2 text-[#A7CE44]-700 hover:underline"
         >
           <ArrowLeft className="w-5 h-5" /> Back to Donations
         </button>
@@ -120,7 +120,7 @@ export default function ViewDonationPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-gradient-to-r from-lime-600 to-lime-500 text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
+          className="bg-gradient-to-r from-[#A7CE44]-600 to-[#A7CE44]-500 text-white rounded-2xl p-6 shadow-lg flex justify-between items-center"
         >
           <div>
             <h1 className="text-2xl font-bold">
@@ -132,7 +132,7 @@ export default function ViewDonationPage() {
 
         {/* Donation Details */}
         <div className="bg-white rounded-2xl shadow p-6">
-          <h3 className="text-lg font-semibold text-lime-700 mb-2">
+          <h3 className="text-lg font-semibold text-[#A7CE44]-700 mb-2">
             Donation Details
           </h3>
           <div className="space-y-1 text-gray-700 ">
@@ -176,7 +176,7 @@ export default function ViewDonationPage() {
               setEditableDonation(donation);
               setIsEditing(true);
             }}
-            className="px-5 py-2 bg-lime-600 hover:bg-lime-700 text-white rounded-xl transition shadow"
+            className="px-5 py-2 bg-[#A7CE44]-600 hover:bg-[#A7CE44]-700 text-white rounded-xl transition shadow"
           >
             Edit Donation
           </button>
@@ -203,7 +203,7 @@ export default function ViewDonationPage() {
                 exit={{ scale: 0.8 }}
                 className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
               >
-                <h3 className="text-xl font-bold text-lime-700 mb-4">
+                <h3 className="text-xl font-bold text-[#A7CE44]-700 mb-4">
                   Edit Donation
                 </h3>
                 <form onSubmit={handleSave} className="flex flex-col gap-4">
@@ -213,7 +213,7 @@ export default function ViewDonationPage() {
                     defaultValue={editableDonation.name}
                     placeholder="Donor Name"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <input
                     type="email"
@@ -221,12 +221,12 @@ export default function ViewDonationPage() {
                     defaultValue={editableDonation.email}
                     placeholder="Email"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <select
                     name="type"
                     defaultValue={editableDonation.type}
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   >
                     <option value="cash">Cash</option>
                     <option value="items">Item</option>
@@ -237,7 +237,7 @@ export default function ViewDonationPage() {
                       name="amount"
                       defaultValue={editableDonation.amount}
                       placeholder="Amount ($)"
-                      className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                      className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                     />
                   )}
                   {editableDonation.type === "items" && (
@@ -246,7 +246,7 @@ export default function ViewDonationPage() {
                       name="items"
                       defaultValue={editableDonation.items}
                       placeholder="Item Description"
-                      className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                      className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                     />
                   )}
                   <input
@@ -254,7 +254,7 @@ export default function ViewDonationPage() {
                     name="details"
                     defaultValue={editableDonation.details || ""}
                     placeholder="Additional Details"
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                   <div className="flex justify-end gap-2 mt-4">
                     <button
@@ -266,7 +266,7 @@ export default function ViewDonationPage() {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
+                      className="px-4 py-2 bg-[#A7CE44]-600 text-white rounded-lg hover:bg-[#A7CE44]-700 transition"
                     >
                       Save
                     </button>

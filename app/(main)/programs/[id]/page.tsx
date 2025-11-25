@@ -65,7 +65,7 @@ export default function ProgramDetailPage() {
           <h1 className="text-3xl font-bold mb-2">404 — Program Not Found</h1>
           <Link
             href="/programs"
-            className="text-lime-700 font-semibold hover:underline"
+            className="text-[#a2cc39] font-semibold hover:underline"
           >
             Back to Programs
           </Link>
@@ -112,7 +112,7 @@ export default function ProgramDetailPage() {
 
           <Link
             href="/programs"
-            className="inline-block mt-10 text-lime-700 font-semibold hover:underline"
+            className="inline-block mt-10 text-[#a2cc39] font-semibold hover:underline"
           >
             ← Back to Programs
           </Link>

@@ -37,7 +37,7 @@ export default function GetInvolvedPage() {
             Your time, skills, and contributions help empower communities across
             Zimbabwe.
           </motion.p>
-          <div className="w-4/5 mx-auto mt-8 border-t-2 border-lime-600 opacity-50"></div>
+          <div className="w-4/5 mx-auto mt-8 border-t-2 border-[#A7CE44] opacity-50"></div>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ export default function GetInvolvedPage() {
               }`}
             >
               {/* Image Card with diagonal cut */}
-              <div className="relative w-full lg:w-1/2 h-80 overflow-hidden rounded-[2rem] shadow-2xl group cursor-pointer">
+              <div className="relative w-full lg:w-1/2 h-80 overflow-hidden rounded-4xl shadow-2xl group cursor-pointer">
                 <Image
                   src={option.image}
                   alt={option.title}
@@ -77,7 +77,7 @@ export default function GetInvolvedPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-6 left-6">
-                  <span className="bg-lime-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-[#A7CE44] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     {option.title}
                   </span>
                 </div>
@@ -91,7 +91,7 @@ export default function GetInvolvedPage() {
                 <p className="text-gray-700 mb-6">{option.description}</p>
                 <a
                   href={option.link}
-                  className="inline-block bg-lime-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-lime-700 transition"
+                  className="inline-block bg-[#A7CE44] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#A7CE44] transition"
                 >
                   Learn More
                 </a>
@@ -105,7 +105,7 @@ export default function GetInvolvedPage() {
       <FAQSection />
 
       {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-lime-700 to-lime-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-[#A7CE44] to-[#8cb624] text-white relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -121,13 +121,13 @@ export default function GetInvolvedPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/volunteer"
-              className="bg-white text-lime-800 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
+              className="bg-white text-[#a2cc39] font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
             >
               Volunteer Today
             </a>
             <a
               href="/donate"
-              className="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-lime-800 transition"
+              className="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#A7CE44] transition"
             >
               Donate
             </a>
@@ -172,7 +172,7 @@ function FAQSection() {
                 {faq.question}
               </span>
               <ChevronDown
-                className={`w-5 h-5 text-lime-600 transition-transform duration-300 ${
+                className={`w-5 h-5 text-[#A7CE44] transition-transform duration-300 ${
                   active === index ? "rotate-180" : ""
                 }`}
               />

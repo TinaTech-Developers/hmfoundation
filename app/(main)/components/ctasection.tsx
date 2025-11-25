@@ -5,7 +5,7 @@ import React from "react";
 
 export default function CTASection() {
   return (
-    <section className="relative bg-lime-600 text-white py-24 overflow-hidden">
+    <section className="relative bg-[#A7CE44] text-white py-24 overflow-hidden">
       {/* Decorative Blobs */}
       <div className="absolute -top-16 -left-16 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
@@ -39,7 +39,7 @@ export default function CTASection() {
         >
           <a
             href="/donate"
-            className="px-8 py-3 bg-white text-lime-600 font-semibold rounded-full shadow-lg hover:bg-white/90 transition"
+            className="px-8 py-3 bg-white text-[#A7CE44] font-semibold rounded-full shadow-lg hover:bg-white/90 transition"
           >
             Donate
           </a>

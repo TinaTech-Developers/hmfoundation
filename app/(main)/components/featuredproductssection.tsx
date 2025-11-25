@@ -51,7 +51,7 @@ export default function FeaturedProjectsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm sm:text-base font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block"
         >
           Our Projects
         </motion.span>
@@ -95,7 +95,7 @@ export default function FeaturedProjectsSection() {
                 <p className="text-gray-600 text-sm flex-1">
                   {project.description}
                 </p>
-                <div className="mt-4 h-1 w-12 bg-lime-600 rounded-full"></div>
+                <div className="mt-4 h-1 w-12 bg-[#A7CE44]-600 rounded-full"></div>
               </div>
             </motion.div>
           ))}
@@ -103,8 +103,8 @@ export default function FeaturedProjectsSection() {
       </div>
 
       {/* Decorative blobs */}
-      <div className="absolute -top-16 -left-16 w-64 h-64 bg-lime-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-lime-200 rounded-full blur-3xl opacity-15"></div>
+      <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#A7CE44]-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-[#A7CE44]-200 rounded-full blur-3xl opacity-15"></div>
     </section>
   );
 }

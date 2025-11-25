@@ -16,14 +16,14 @@ const items = [
     title: "Children",
     blurb:
       "Empowering children to reach their full potential by providing quality education, mentorship, and essential learning resources.",
-    icon: <FaChild className="w-7 h-7 text-lime-600" />,
+    icon: <FaChild className="w-7 h-7 text-[#A7CE44]-600" />,
     imageUrl: "https://dch.org.za/wp-content/uploads/2019/05/Untitled-20-2.jpg",
   },
   {
     title: "Elderly",
     blurb:
       "Supporting communities through volunteer initiatives, skills development, and care programs for the elderly and vulnerable.",
-    icon: <MdElderly className="w-7 h-7 text-lime-600" />,
+    icon: <MdElderly className="w-7 h-7 text-[#A7CE44]-600" />,
     imageUrl:
       "/lifestyle-scene-from-community-showing-care-support-from-people.jpg",
   },
@@ -31,7 +31,7 @@ const items = [
     title: "Community",
     blurb:
       "Promoting sustainability through tree planting, community cleanups, and awareness campaigns for a healthier planet.",
-    icon: <BsPeople className="w-7 h-7 text-lime-600" />,
+    icon: <BsPeople className="w-7 h-7 text-[#A7CE44]-600" />,
     imageUrl:
       "/group-happy-african-volunteers-planting-tree-park-africa-volunteering-charity-people-ecology-concept.jpg",
   },
@@ -39,10 +39,10 @@ const items = [
 
 export default function ProgramsSection() {
   return (
-    <section className="relative py-20 sm:py-24 bg-gradient-to-b from-white to-lime-50 overflow-hidden">
+    <section className="relative py-20 sm:py-24 bg-linear-to-b from-white to-lime-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
-        {/* <span className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block">
+        {/* <span className="text-sm sm:text-base font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block">
           Our Projects
         </span> */}
         <motion.h3
@@ -66,7 +66,7 @@ export default function ProgramsSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="flex flex-col items-center justify-center relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl shadow-lime-600 transition-all duration-300"
+              className="flex flex-col items-center justify-center relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl shadow-[#A7CE44]-600 transition-all duration-300"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -84,13 +84,13 @@ export default function ProgramsSection() {
               </div>
               <Link
                 href={"/programs"}
-                className="flex my-10 items-center justify-center p-2 hover:bg-lime-600 hover:text-white gap-2 text-sm text-lime-600 border border-lime-600 w-28"
+                className="flex my-10 items-center justify-center p-2 hover:bg-[#A7CE44] hover:text-white gap-2 text-sm text-[#A7CE44] border border-[#A7CE44] w-28"
               >
                 Read More
                 <ArrowRight size={15} />
               </Link>
-              {/* Centered lime Line (80% width) */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-2 bg-lime-600 "></div>
+              {/* Centered [#A7CE44] Line (80% width) */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-2 bg-[#A7CE44]-600 "></div>
             </motion.div>
           ))}
         </div>
@@ -99,7 +99,7 @@ export default function ProgramsSection() {
         <div className="mt-14 sm:mt-16">
           <Link
             href="/programs"
-            className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-lime-600 text-white rounded-full font-semibold shadow-md hover:bg-lime-700 transition-all duration-300 text-sm sm:text-base"
+            className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-[#A7CE44] text-white rounded-full font-semibold shadow-md hover:bg-[#A7CE44] transition-all duration-300 text-sm sm:text-base"
           >
             Explore All Programs
           </Link>
@@ -107,8 +107,8 @@ export default function ProgramsSection() {
       </div>
 
       {/* Decorative Background Orbs */}
-      <div className="absolute -top-24 -right-24 w-64 sm:w-96 h-64 sm:h-96 bg-lime-100 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute bottom-0 left-0 w-64 sm:w-80 h-64 sm:h-80 bg-lime-200 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute -top-24 -right-24 w-64 sm:w-96 h-64 sm:h-96 bg-[#A7CE44]-100 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute bottom-0 left-0 w-64 sm:w-80 h-64 sm:h-80 bg-[#A7CE44]-200 rounded-full blur-3xl opacity-30"></div>
     </section>
   );
 }

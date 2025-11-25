@@ -94,8 +94,8 @@ export default function DonatePage() {
               onClick={() => setDonationType("cash")}
               className={`px-6 py-3 rounded-full font-semibold transition w-full sm:w-auto ${
                 donationType === "cash"
-                  ? "bg-lime-600 text-white"
-                  : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
+                  ? "bg-[#A7CE44]-600 text-white"
+                  : "bg-gray-200 text-gray-900 hover:bg-[#A7CE44]-500 hover:text-white"
               }`}
             >
               Cash Donation
@@ -104,8 +104,8 @@ export default function DonatePage() {
               onClick={() => setDonationType("items")}
               className={`px-6 py-3 rounded-full font-semibold transition w-full sm:w-auto ${
                 donationType === "items"
-                  ? "bg-lime-600 text-white"
-                  : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
+                  ? "bg-[#A7CE44]-600 text-white"
+                  : "bg-gray-200 text-gray-900 hover:bg-[#A7CE44]-500 hover:text-white"
               }`}
             >
               Donate Items
@@ -125,8 +125,8 @@ export default function DonatePage() {
                     onClick={() => setAmount(opt)}
                     className={`px-6 py-3 rounded-full font-semibold transition ${
                       amount === opt
-                        ? "bg-lime-600 text-white"
-                        : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
+                        ? "bg-[#A7CE44]-600 text-white"
+                        : "bg-gray-200 text-gray-900 hover:bg-[#A7CE44]-500 hover:text-white"
                     }`}
                   >
                     ${opt}
@@ -140,7 +140,7 @@ export default function DonatePage() {
                   placeholder="Custom amount"
                   value={customAmount}
                   onChange={handleCustomAmountChange}
-                  className="w-48 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  className="w-48 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]-600"
                 />
               </div>
 
@@ -158,7 +158,7 @@ export default function DonatePage() {
                     name="name"
                     required
                     placeholder="Full Name"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
 
                   <input
@@ -166,7 +166,7 @@ export default function DonatePage() {
                     name="email"
                     required
                     placeholder="you@example.com"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
 
                   <input
@@ -179,7 +179,7 @@ export default function DonatePage() {
 
                 <button
                   type="submit"
-                  className="mt-6 w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
+                  className="mt-6 w-full py-3 bg-[#A7CE44]-600 text-white font-semibold rounded-full hover:bg-[#A7CE44]-700 transition"
                 >
                   Donate ${amount}
                 </button>
@@ -203,7 +203,7 @@ export default function DonatePage() {
                   name="name"
                   required
                   placeholder="Full Name"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                 />
 
                 <input
@@ -211,14 +211,14 @@ export default function DonatePage() {
                   name="email"
                   required
                   placeholder="you@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                 />
 
                 <textarea
                   name="items"
                   required
                   placeholder="Describe the items you would like to donate"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                   rows={4}
                 />
 
@@ -226,14 +226,14 @@ export default function DonatePage() {
                   name="details"
                   required
                   placeholder="Pickup or delivery details"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#A7CE44]-600"
                   rows={2}
                 />
               </div>
 
               <button
                 type="submit"
-                className="mt-6 w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
+                className="mt-6 w-full py-3 bg-[#A7CE44]-600 text-white font-semibold rounded-full hover:bg-[#A7CE44]-700 transition"
               >
                 Submit Item Donation
               </button>

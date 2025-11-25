@@ -51,7 +51,7 @@ export default function FeaturedShowcaseSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block"
+            className="text-sm sm:text-base font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block"
           >
             Highlights
           </motion.span>
@@ -110,7 +110,7 @@ export default function FeaturedShowcaseSection() {
                   <div className="flex justify-center md:justify-start">
                     <a
                       href="#"
-                      className="inline-block px-6 sm:px-8 py-2.5 bg-lime-600 text-white rounded-full font-medium text-sm sm:text-base hover:bg-lime-700 transition shadow-md"
+                      className="inline-block px-6 sm:px-8 py-2.5 bg-[#A7CE44]-600 text-white rounded-full font-medium text-sm sm:text-base hover:bg-[#A7CE44]-700 transition shadow-md"
                     >
                       {item.cta}
                     </a>
@@ -123,8 +123,8 @@ export default function FeaturedShowcaseSection() {
       </div>
 
       {/* Decorative Blobs */}
-      <div className="absolute -top-16 -left-16 w-48 sm:w-64 h-48 sm:h-64 bg-lime-100 rounded-full blur-3xl opacity-25"></div>
-      <div className="absolute -bottom-16 -right-16 w-48 sm:w-64 h-48 sm:h-64 bg-lime-200 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -top-16 -left-16 w-48 sm:w-64 h-48 sm:h-64 bg-[#A7CE44]-100 rounded-full blur-3xl opacity-25"></div>
+      <div className="absolute -bottom-16 -right-16 w-48 sm:w-64 h-48 sm:h-64 bg-[#A7CE44]-200 rounded-full blur-3xl opacity-20"></div>
     </section>
   );
 }

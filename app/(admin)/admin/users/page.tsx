@@ -109,14 +109,14 @@ export default function AdminUsersPage() {
           className="flex justify-between items-center"
         >
           <div>
-            <h2 className="text-3xl font-bold text-lime-700">Users</h2>
+            <h2 className="text-3xl font-bold text-[#A7CE44]-700">Users</h2>
             <p className="text-gray-600 mt-1">
               Manage platform admins and staff.
             </p>
           </div>
           <button
             onClick={() => openModal()}
-            className="flex items-center gap-2 px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition shadow-md"
+            className="flex items-center gap-2 px-4 py-2 bg-[#A7CE44]-600 text-white rounded-lg hover:bg-[#A7CE44]-700 transition shadow-md"
           >
             <Plus size={16} /> Add User
           </button>
@@ -132,28 +132,31 @@ export default function AdminUsersPage() {
             <div className="p-6 text-center text-gray-500">No users found.</div>
           ) : (
             <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-lime-100">
+              <thead className="bg-[#A7CE44]-100">
                 <tr>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-lime-800">
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-[#A7CE44]-800">
                     #
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-lime-800">
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-[#A7CE44]-800">
                     Name
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-lime-800">
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-[#A7CE44]-800">
                     Email
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-lime-800">
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-[#A7CE44]-800">
                     Role
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-lime-800">
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-[#A7CE44]-800">
                     Actions
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {users.map((user, i) => (
-                  <tr key={user._id} className="hover:bg-lime-50 transition">
+                  <tr
+                    key={user._id}
+                    className="hover:bg-[#A7CE44]-50 transition"
+                  >
                     <td className="px-6 py-4">{i + 1}</td>
                     <td className="px-6 py-4 font-medium">{user.name}</td>
                     <td className="px-6 py-4">{user.email}</td>
@@ -161,7 +164,7 @@ export default function AdminUsersPage() {
                     <td className="px-6 py-4 flex gap-2">
                       <button
                         onClick={() => openModal(user)}
-                        className="flex items-center gap-1 px-3 py-1 bg-lime-600 text-white rounded hover:bg-lime-700 transition text-sm"
+                        className="flex items-center gap-1 px-3 py-1 bg-[#A7CE44]-600 text-white rounded hover:bg-[#A7CE44]-700 transition text-sm"
                       >
                         <Edit size={14} /> Edit
                       </button>
@@ -195,7 +198,7 @@ export default function AdminUsersPage() {
               exit={{ scale: 0.85 }}
               className="bg-white rounded-2xl p-6 w-full max-w-md shadow-lg"
             >
-              <h3 className="text-xl font-bold text-lime-700 mb-4">
+              <h3 className="text-xl font-bold text-[#A7CE44]-700 mb-4">
                 {currentUser ? "Edit User" : "Add User"}
               </h3>
               <form
@@ -213,7 +216,7 @@ export default function AdminUsersPage() {
                   defaultValue={currentUser?.name || ""}
                   placeholder="Full Name"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                 />
                 <input
                   type="email"
@@ -221,7 +224,7 @@ export default function AdminUsersPage() {
                   defaultValue={currentUser?.email || ""}
                   placeholder="Email"
                   required
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                 />
                 {!currentUser && (
                   <input
@@ -229,13 +232,13 @@ export default function AdminUsersPage() {
                     name="password"
                     placeholder="Password"
                     required
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                   />
                 )}
                 <select
                   name="role"
                   defaultValue={currentUser?.role || "Staff"}
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-lime-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#A7CE44]-600"
                 >
                   <option value="Admin">Admin</option>
                   <option value="Staff">Staff</option>
@@ -252,7 +255,7 @@ export default function AdminUsersPage() {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-lime-600 text-white rounded-lg hover:bg-lime-700 transition"
+                    className="px-4 py-2 bg-[#A7CE44]-600 text-white rounded-lg hover:bg-[#A7CE44]-700 transition"
                   >
                     Save
                   </button>

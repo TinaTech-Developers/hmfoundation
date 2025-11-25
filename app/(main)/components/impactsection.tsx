@@ -26,7 +26,7 @@ export default function ImpactSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm  font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm  font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block"
         >
           Our Impact
         </motion.span>
@@ -57,9 +57,9 @@ export default function ImpactSection() {
                 className="flex flex-col items-center bg-lime-50 rounded-2xl p-8 hover:shadow-md hover:bg-lime-100 transition-all duration-300"
               >
                 <div className="mb-4 bg-white shadow-sm p-3 rounded-xl">
-                  <Icon className="w-8 h-8 text-lime-600" />
+                  <Icon className="w-8 h-8 text-[#A7CE44]" />
                 </div>
-                <h4 className="text-3xl sm:text-4xl font-bold text-lime-700 mb-2">
+                <h4 className="text-3xl sm:text-4xl font-bold text-[#A7CE44] mb-2">
                   {stat.number}
                 </h4>
                 <p className="text-gray-700 text-sm sm:text-base font-medium">

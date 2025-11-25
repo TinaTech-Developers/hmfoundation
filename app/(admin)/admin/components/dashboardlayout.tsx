@@ -33,10 +33,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       {/* Header */}
       <header className="sticky top-0 z-50 shadow-md bg-white px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-lime-700">Admin Panel</h1>
+        <h1 className="text-xl font-bold text-[#A7CE44]-700">Admin Panel</h1>
         <button
           onClick={handleSignOut}
-          className="flex bg-red-700 p-2 text-white items-center gap-2 rounded-lg hover:bg-lime-800 transition"
+          className="flex bg-red-700 p-2 text-white items-center gap-2 rounded-lg hover:bg-[#A7CE44]-800 transition"
         >
           <LogOut size={18} /> Sign Out
         </button>
@@ -44,13 +44,13 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
       <div className="flex flex-1">
         {/* Sidebar */}
-        <aside className="hidden lg:flex flex-col w-64 bg-lime-100 border-r border-gray-200 p-4 justify-between">
+        <aside className="hidden lg:flex flex-col w-64 bg-[#A7CE44]-100 border-r border-gray-200 p-4 justify-between">
           <nav className="space-y-2">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 rounded-lg hover:bg-lime-200 transition font-medium text-lime-800"
+                className="block px-4 py-2 rounded-lg hover:bg-[#A7CE44]-200 transition font-medium text-[#A7CE44]-800"
               >
                 {item.label}
               </Link>

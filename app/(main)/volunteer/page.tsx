@@ -69,8 +69,8 @@ export default function VolunteerPage() {
                 onClick={() => setVolunteerType(type as any)}
                 className={`px-6 py-3 rounded-full font-semibold transition ${
                   volunteerType === type
-                    ? "bg-lime-600 text-white"
-                    : "bg-gray-200 text-gray-900 hover:bg-lime-500 hover:text-white"
+                    ? "bg-[#a2cc39] text-white"
+                    : "bg-gray-200 text-gray-900 hover:bg-[#A7CE44] hover:text-white"
                 }`}
               >
                 {type === "children"
@@ -113,7 +113,7 @@ export default function VolunteerPage() {
                       ? "you@example.com"
                       : "+263 77 123 4567"
                   }
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]"
                 />
               </div>
             ))}
@@ -128,14 +128,14 @@ export default function VolunteerPage() {
                 onChange={handleChange}
                 required
                 placeholder="Describe how you can contribute, your skills, availability, etc."
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]-600"
                 rows={4}
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 bg-lime-600 text-white font-semibold rounded-full hover:bg-lime-700 transition"
+              className="w-full py-3 bg-[#A7CE44] text-white font-semibold rounded-full hover:bg-[#a2cc39] transition"
             >
               Submit Volunteer Request
             </button>
@@ -175,7 +175,7 @@ export default function VolunteerPage() {
               <p className="text-gray-900 mb-4">{modalMessage}</p>
               <button
                 onClick={() => setModalOpen(false)}
-                className="px-6 py-2 bg-lime-600 text-white rounded-full hover:bg-lime-700 transition"
+                className="px-6 py-2 bg-[#A7CE44]-600 text-white rounded-full hover:bg-[#A7CE44]-700 transition"
               >
                 Close
               </button>

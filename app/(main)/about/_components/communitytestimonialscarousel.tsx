@@ -54,7 +54,7 @@ export default function CommunityTestimonialsCarousel() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm  font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm  font-semibold text-[#A7CE44]-600 uppercase mb-2 inline-block"
         >
           Voices of Change
         </motion.span>
@@ -121,7 +121,7 @@ export default function CommunityTestimonialsCarousel() {
               key={index}
               onClick={() => setCurrent(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
-                index === current ? "bg-lime-600" : "bg-gray-300"
+                index === current ? "bg-[#A7CE44]-600" : "bg-gray-300"
               }`}
             />
           ))}

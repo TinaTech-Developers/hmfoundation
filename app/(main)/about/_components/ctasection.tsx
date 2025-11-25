@@ -5,11 +5,11 @@ import React from "react";
 
 export default function CTASection() {
   return (
-    <section className="relative py-20 bg-lime-600 overflow-hidden">
+    <section className="relative py-20 bg-[#A7CE44] overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Decorative Blobs */}
-        <div className="absolute -top-16 -left-16 w-64 h-64 bg-lime-500/30 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-lime-700/30 rounded-full blur-3xl"></div>
+        <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#A7CE44]/30 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-[#A7CE44]/30 rounded-full blur-3xl"></div>
 
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -33,13 +33,13 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="/donate"
-            className="px-8 py-3 bg-white text-lime-600 font-semibold rounded-full shadow hover:bg-gray-100 transition"
+            className="px-8 py-3 bg-white text-[#A7CE44] font-semibold rounded-full shadow hover:bg-gray-100 transition"
           >
             Donate
           </a>
           <a
             href="/volunteer"
-            className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full shadow hover:bg-white hover:text-lime-600 transition"
+            className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full shadow hover:bg-white hover:text-[#A7CE44] transition"
           >
             Volunteer
           </a>

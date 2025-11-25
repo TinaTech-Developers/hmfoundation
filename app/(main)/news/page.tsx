@@ -101,7 +101,7 @@ export default function NewsPage() {
                       />
                     </div>
                     <div className="p-8">
-                      <span className="text-lime-700 text-sm font-semibold">
+                      <span className="text-[#a2cc39] text-sm font-semibold">
                         {filteredArticles[0].category.toUpperCase()}
                       </span>
                       <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">
@@ -112,7 +112,7 @@ export default function NewsPage() {
                       </p>
                       <Link
                         href={`/news/${filteredArticles[0]._id}`}
-                        className="text-lime-700 font-medium hover:underline"
+                        className="text-[#a2cc39] font-medium hover:underline"
                       >
                         Read More →
                       </Link>
@@ -128,7 +128,7 @@ export default function NewsPage() {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: i * 0.1 }}
-                      className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl hover:shadow-lime-600 transition overflow-hidden"
+                      className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl hover:shadow-[#A7CE44] transition overflow-hidden"
                     >
                       <div className="relative h-56 w-full">
                         <Image
@@ -139,7 +139,7 @@ export default function NewsPage() {
                         />
                       </div>
                       <div className="p-6 pb-10">
-                        <p className="text-sm text-lime-700 font-semibold mb-2">
+                        <p className="text-sm text-[#a2cc39] font-semibold mb-2">
                           {article.category}
                         </p>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -150,12 +150,12 @@ export default function NewsPage() {
                         </p>
                         <Link
                           href={`/news/${article._id}`}
-                          className="text-lime-700 font-medium hover:underline"
+                          className="text-[#a2cc39] font-medium hover:underline"
                         >
                           Read More →
                         </Link>
                       </div>
-                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600 "></div>
+                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-[#A7CE44] "></div>
                     </motion.div>
                   ))}
                 </div>
@@ -174,8 +174,8 @@ export default function NewsPage() {
                     onClick={() => setSelectedCategory(null)}
                     className={`w-full text-left transition ${
                       !selectedCategory
-                        ? "text-lime-700 font-bold"
-                        : "text-gray-700 hover:text-lime-700"
+                        ? "text-[#a2cc39] font-bold"
+                        : "text-gray-700 hover:text-[#a2cc39]"
                     }`}
                   >
                     All
@@ -187,8 +187,8 @@ export default function NewsPage() {
                       onClick={() => setSelectedCategory(cat)}
                       className={`w-full text-left transition ${
                         selectedCategory === cat
-                          ? "text-lime-700 font-bold"
-                          : "text-gray-700 hover:text-lime-700"
+                          ? "text-[#a2cc39] font-bold"
+                          : "text-gray-700 hover:text-[#a2cc39]"
                       }`}
                     >
                       {cat}
@@ -211,11 +211,11 @@ export default function NewsPage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]"
                 />
                 <button
                   type="submit"
-                  className="bg-lime-700 text-white font-semibold py-2 rounded-lg hover:bg-lime-800 transition"
+                  className="bg-[#a2cc39] text-white font-semibold py-2 rounded-lg hover:bg-[#a2cc39] transition"
                 >
                   Subscribe
                 </button>

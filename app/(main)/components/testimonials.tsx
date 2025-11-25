@@ -26,20 +26,18 @@ const testimonials: Testimonial[] = [
   {
     id: 2,
     name: "Nyasha Muronzi",
-    role: "Communi",
+    role: "",
     quote:
       "It has been great being part of the intiative which is dedicated to serve and save lifes at the same time. Hiraya Manawari is a true testament of giving back to community.",
-    photoUrl:
-      "https://lh3.googleusercontent.com/a-/ALV-UjVBk7Gt86SsSoAfsxjoOD5Iv5X9JcSNVwKD9m0GFCPw3iK2VJ0=w72-h72-p-rp-mo-br100",
+    photoUrl: "/nyasha.jpeg",
   },
   {
     id: 3,
     name: "Sebastian Jerahuni",
-    role: "Local Partner",
+    role: "",
     quote:
       "Talk of selfless commitment in alleviating communities, Hiraya stands on solid ground. I am loving the groundwork happening in solidifying the vision.",
-    photoUrl:
-      "https://e7.pngegg.com/pngimages/86/519/png-clipart-computer-icons-person-blog-person-icon-rectangle-logo-thumbnail.png",
+    photoUrl: "/WhatsApp Image 2025-11-24 at 16.34.43.jpeg",
   },
 ];
 
@@ -58,7 +56,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm sm:text-base font-semibold text-lime-600 uppercase mb-2 inline-block"
+          className="text-sm sm:text-base font-semibold text-[#A7CE44] uppercase mb-2 inline-block"
         >
           Voices of Change
         </motion.span>
@@ -126,7 +124,7 @@ export default function Testimonials() {
               key={index}
               onClick={() => setCurrent(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
-                index === current ? "bg-lime-600" : "bg-gray-300"
+                index === current ? "bg-[#A7CE44]" : "bg-gray-300"
               }`}
             />
           ))}
@@ -134,8 +132,8 @@ export default function Testimonials() {
       </div>
 
       {/* Decorative blobs */}
-      <div className="absolute -top-16 -left-16 w-64 h-64 bg-lime-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-lime-200 rounded-full blur-3xl opacity-15"></div>
+      <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#A7CE44]-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-[#A7CE44]-200 rounded-full blur-3xl opacity-15"></div>
     </section>
   );
 }

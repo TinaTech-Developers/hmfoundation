@@ -18,8 +18,8 @@ export default function ProfessionalFooter() {
   return (
     <footer className="relative bg-gray-900 text-gray-200 overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute -top-16 -left-16 w-64 h-64 bg-lime-600/20 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-lime-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#A7CE44]-600/20 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-[#A7CE44]-500/20 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -41,22 +41,31 @@ export default function ProfessionalFooter() {
             </h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="/" className="hover:text-lime-500 transition">
+                <a href="/" className="hover:text-[#A7CE44]-500 transition">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:text-lime-500 transition">
+                <a
+                  href="/about"
+                  className="hover:text-[#A7CE44]-500 transition"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/projects" className="hover:text-lime-500 transition">
+                <a
+                  href="/projects"
+                  className="hover:text-[#A7CE44]-500 transition"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-lime-500 transition">
+                <a
+                  href="/contact"
+                  className="hover:text-[#A7CE44]-500 transition"
+                >
                   Contact
                 </a>
               </li>
@@ -73,7 +82,7 @@ export default function ProfessionalFooter() {
                 Email:{" "}
                 <a
                   href="mailto:info@hirayamanawarifoundation.com"
-                  className="hover:text-lime-500 transition"
+                  className="hover:text-[#A7CE44]-500 transition"
                 >
                   info@hirayamanawarifoundation.com
                 </a>
@@ -82,7 +91,7 @@ export default function ProfessionalFooter() {
                 Phone:{" "}
                 <a
                   href="tel:+263123456789"
-                  className="hover:text-lime-500 transition"
+                  className="hover:text-[#A7CE44]-500 transition"
                 >
                   +263 123 456 789
                 </a>
@@ -104,7 +113,7 @@ export default function ProfessionalFooter() {
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-lime-600 text-white rounded-full font-semibold hover:bg-lime-700 transition"
+                className="px-6 py-2 bg-[#A7CE44]-600 text-white rounded-full font-semibold hover:bg-[#A7CE44]-700 transition"
               >
                 Subscribe
               </button>
@@ -112,25 +121,25 @@ export default function ProfessionalFooter() {
             <div className="flex space-x-4 mt-2">
               <a
                 href="#"
-                className="text-gray-400 hover:text-lime-500 transition"
+                className="text-gray-400 hover:text-[#A7CE44]-500 transition"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-lime-500 transition"
+                className="text-gray-400 hover:text-[#A7CE44]-500 transition"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-lime-500 transition"
+                className="text-gray-400 hover:text-[#A7CE44]-500 transition"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-lime-500 transition"
+                className="text-gray-400 hover:text-[#A7CE44]-500 transition"
               >
                 <FaLinkedinIn />
               </a>

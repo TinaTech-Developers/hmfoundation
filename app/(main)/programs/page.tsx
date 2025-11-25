@@ -87,7 +87,7 @@ export default function ProgramsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:shadow-lime-600 hover:-translate-y-1 transition-all"
+                className="relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:shadow-[#A7CE44] hover:-translate-y-1 transition-all"
               >
                 <div className="relative h-56 w-full">
                   <Image
@@ -107,13 +107,13 @@ export default function ProgramsPage() {
                   </p>
                   <Link
                     href={`/programs/${program._id}`}
-                    className="inline-block text-lime-700 font-medium hover:underline"
+                    className="inline-block text-[#A7CE44] font-medium hover:underline"
                   >
                     Learn More →
                   </Link>
                 </div>
 
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-lime-600"></div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-2 w-4/5 bg-[#A7CE44]"></div>
               </motion.div>
             ))
           )}

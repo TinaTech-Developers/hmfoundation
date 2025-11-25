@@ -71,7 +71,7 @@ export default function NewsArticlePage() {
           </p>
           <Link
             href="/news"
-            className="bg-lime-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-lime-800 transition"
+            className="bg-[#a2cc39] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#a2cc39] transition"
           >
             Back to News
           </Link>
@@ -92,7 +92,7 @@ export default function NewsArticlePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-lime-700 font-semibold text-sm uppercase">
+          <span className="text-[#a2cc39] font-semibold text-sm uppercase">
             {article.category}
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2 mb-4">
@@ -126,7 +126,7 @@ export default function NewsArticlePage() {
 
           <Link
             href="/news"
-            className="inline-block mt-10 text-lime-700 font-semibold hover:underline"
+            className="inline-block mt-10 text-[#a2cc39] font-semibold hover:underline"
           >
             ← Back to All News
           </Link>

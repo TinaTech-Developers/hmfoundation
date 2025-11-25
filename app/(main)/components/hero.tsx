@@ -79,7 +79,7 @@ export default function HeroSlider() {
               </p>
               <Link
                 href={slide.href}
-                className="inline-block px-8 py-3 bg-linear-to-r from-lime-600 to-lime-500 text-white rounded-full font-semibold shadow-md hover:from-lime-700 hover:to-lime-600 hover:scale-105 transition-all duration-300"
+                className="inline-block px-8 py-3 bg-linear-to-r from-[#A7CE44] to-[#A7CE44] text-white rounded-full font-semibold shadow-md hover:from-[#A7CE44]-700 hover:to-[#A7CE44]-600 hover:scale-105 transition-all duration-300"
               >
                 {slide.cta}
               </Link>
@@ -95,7 +95,7 @@ export default function HeroSlider() {
             key={idx}
             onClick={() => setCurrent(idx)}
             className={`w-3 h-3 rounded-full ${
-              current === idx ? "bg-lime-500" : "bg-white/50"
+              current === idx ? "bg-[#A7CE44]" : "bg-white/50"
             } transition-all`}
           />
         ))}

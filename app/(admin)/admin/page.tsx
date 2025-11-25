@@ -64,7 +64,7 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]-600"
             />
           </div>
 
@@ -78,7 +78,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="********"
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-600"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#A7CE44]-600"
             />
           </div>
 
@@ -89,8 +89,8 @@ export default function LoginPage() {
             disabled={loading}
             className={`w-full py-3 font-semibold rounded-full transition ${
               loading
-                ? "bg-lime-400 cursor-not-allowed"
-                : "bg-lime-600 hover:bg-lime-700 text-white"
+                ? "bg-[#A7CE44]-400 cursor-not-allowed"
+                : "bg-[#A7CE44]-600 hover:bg-[#A7CE44]-700 text-white"
             }`}
           >
             {loading ? "Logging in..." : "Log In"}
@@ -98,7 +98,7 @@ export default function LoginPage() {
         </form>
 
         <div className="mt-6 flex justify-between text-sm text-gray-600">
-          <a href="#" className="hover:text-lime-600 transition">
+          <a href="#" className="hover:text-[#A7CE44]-600 transition">
             Forgot password?
           </a>
         </div>

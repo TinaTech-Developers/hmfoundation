@@ -82,13 +82,13 @@ export default function FloatingNavbar() {
                 >
                   <Link
                     href={link.href}
-                    className={`text-gray-800 font-medium transition-colors duration-200 group-hover:text-lime-700 ${
-                      isActive ? "text-lime-500" : ""
+                    className={`text-gray-800 font-medium transition-colors duration-200 group-hover:text-[#a2cc39] ${
+                      isActive ? "text-[#A7CE44]" : ""
                     }`}
                   >
                     {link.name}
                   </Link>
-                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-lime-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#A7CE44] transition-all duration-300 group-hover:w-full"></span>
                 </motion.div>
               );
             })}
@@ -97,12 +97,12 @@ export default function FloatingNavbar() {
             <motion.div whileHover={{ scale: 1.1 }} className="relative">
               <Link
                 href="/donate"
-                className="relative z-10 px-5 py-2 rounded-full bg-gradient-to-r from-lime-600 to-lime-500 text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="relative z-10 px-5 py-2 rounded-full bg-linear-to-r from-[#a2cc39] to-[#A7CE44] text-white font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 Donate
               </Link>
               <motion.span
-                className="absolute -inset-1 rounded-full bg-lime-400 opacity-30 blur-xl -z-10"
+                className="absolute -inset-1 rounded-full bg-[#A7CE44] opacity-30 blur-xl -z-10"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{
                   repeat: Infinity,
@@ -140,8 +140,8 @@ export default function FloatingNavbar() {
                       href={link.href}
                       className={`text-base font-semibold ${
                         isActive
-                          ? "text-lime-500"
-                          : "text-gray-800 hover:text-lime-500"
+                          ? "text-[#A7CE44]-500"
+                          : "text-gray-800 hover:text-[#A7CE44]"
                       }`}
                       onClick={() => setIsOpen(false)}
                     >
@@ -155,7 +155,7 @@ export default function FloatingNavbar() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lime-700 hover:text-lime-900 transition"
+                  className="text-[#a2cc39] hover:text-[#90b926] transition"
                 >
                   <FaLinkedin size={24} />
                 </a>
@@ -164,7 +164,7 @@ export default function FloatingNavbar() {
                 <Link
                   href="/donate"
                   onClick={() => setIsOpen(false)}
-                  className="mt-4 w-full text-center px-6 py-3 bg-gradient-to-r from-lime-600 to-lime-500 text-white rounded-full font-bold shadow-lg hover:shadow-2xl transition-all duration-300"
+                  className="mt-4 w-full text-center px-6 py-3 bg-linear-to-r from-[#A7CE44] to-[#a2cc39] text-white rounded-full font-bold shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                   Donate
                 </Link>

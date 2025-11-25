@@ -32,7 +32,7 @@ const partners = [
 
 export default function PartnerSpotlightSection() {
   return (
-    <section className="relative py-24 overflow-hidden bg-linear-to-br from-lime-50 via-white to-lime-100">
+    <section className="relative py-24 overflow-hidden bg-linear-to-br from-[#A7CE44]-50 via-white to-[#A7CE44]-100">
       {/* soft decorative background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#d9f99d_0%,transparent_60%)] opacity-40"></div>
 
@@ -58,7 +58,7 @@ export default function PartnerSpotlightSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               whileHover={{ scale: 1.03 }}
-              className="group relative rounded p-6 bg-white/80 backdrop-blur-lg shadow-sm border border-lime-100 hover:shadow-xl transition-all"
+              className="group relative rounded p-6 bg-white/80 backdrop-blur-lg shadow-sm border border-[#A7CE44]-100 hover:shadow-xl transition-all"
             >
               <div className="flex justify-center mb-4">
                 <Image
@@ -73,7 +73,7 @@ export default function PartnerSpotlightSection() {
                 {partner.name}
               </h3>
               <p className="text-gray-700 text-sm italic">{partner.quote}</p>
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-lime-600 to-lime-400 opacity-0 group-hover:opacity-100 transition-all rounded-b-2xl"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-[#A7CE44]-600 to-[#A7CE44]-400 opacity-0 group-hover:opacity-100 transition-all rounded-b-2xl"></div>
             </motion.div>
           ))}
         </div>
